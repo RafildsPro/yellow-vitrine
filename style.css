@@ -414,20 +414,107 @@ footer a:hover {
 
 /* ── RESPONSIVE ── */
 @media (max-width: 640px) {
+
+  /* Header */
   .header-inner {
     flex-wrap: wrap;
     height: auto;
-    padding: 12px 16px;
-    gap: 12px;
+    padding: 10px 16px;
+    gap: 8px;
   }
 
-  .hero h1 { font-size: 1.5rem; }
+  .logo {
+    font-size: 1.1rem;
+  }
 
+  .logo-img {
+    height: 36px;
+    width: 36px;
+  }
+
+  nav a {
+    font-size: 0.82rem;
+    padding: 5px 10px;
+  }
+
+  .wpp-btn {
+    font-size: 0.78rem;
+    padding: 6px 12px;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 36px 16px 32px;
+  }
+
+  .hero-badge {
+    font-size: 0.78rem;
+    padding: 3px 14px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 0px #0d1f3c;
+  }
+
+  .hero p {
+    font-size: 0.88rem;
+  }
+
+  .sil { font-size: 70px; }
+  .sil-1 { font-size: 90px; }
+
+  /* Filtros */
+  .filtros {
+    padding: 16px 16px 8px;
+  }
+
+  .filtros-inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #filtro-tipo, #filtro-select {
+    width: 100%;
+    min-width: unset;
+    font-size: 0.9rem;
+    padding: 10px 40px 10px 18px;
+  }
+
+  /* Grid */
   .grid-produtos {
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 16px;
-    padding: 0 16px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 0 12px;
+    margin: 16px auto 32px;
   }
 
-  .wpp-btn span { display: none; }
+  /* Cards */
+  .card-nome {
+    font-size: 0.82rem;
+  }
+
+  .card-tipo {
+    font-size: 0.72rem;
+  }
+
+  .card-preco {
+    font-size: 1.1rem;
+  }
+
+  .card-wpp {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+  }
+
+  .card-edicao {
+    font-size: 0.68rem;
+    padding: 2px 8px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 16px;
+    font-size: 0.78rem;
+  }
 }
