@@ -1,32 +1,18 @@
-[
+{"items": [
   {
-    "id": 1,
     "nome": "Caixa de Booster - Rivais Predestinados",
     "edicao": "Rivais Predestinados",
     "tipo": "Caixa de Booster",
     "preco": 350.00,
     "unidades": 2,
-    "imagem": "imagens/produto1.jpg",
-    "destaque": false
+    "imagem": ""
   },
   {
-    "id": 2,
     "nome": "Blister Triplo - 151",
     "edicao": "151",
     "tipo": "Blister",
     "preco": 85.00,
     "unidades": 3,
-    "imagem": "imagens/produto2.jpg",
-    "destaque": false
-  },
-  {
-    "id": 3,
-    "nome": "Coleção Treinador - Amigos de Jornada",
-    "edicao": "Amigos de Jornada",
-    "tipo": "Coleção Treinador",
-    "preco": 290.00,
-    "unidades": 1,
-    "imagem": "imagens/produto3.jpg",
-    "destaque": false
+    "imagem": ""
   }
-]
+]}

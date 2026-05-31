@@ -6,7 +6,8 @@ let filtroAtivo = 'Todos';
 
 async function carregarProdutos() {
   const res = await fetch('produtos.json');
-  produtos = await res.json();
+  const data = await res.json();
+  produtos = data.items || data;
   renderizar();
 }
 

@@ -14,10 +14,9 @@ collections:
         file: produtos.json
         fields:
           - label: Produtos
-            name: root
+            name: items
             widget: list
             fields:
-              - { label: ID, name: id, widget: number }
               - { label: Nome, name: nome, widget: string }
               - label: Edição
                 name: edicao
@@ -49,7 +48,7 @@ collections:
                   - Coleção Treinador
               - { label: "Preço (R$)", name: preco, widget: number, value_type: float }
               - { label: Unidades disponíveis, name: unidades, widget: number }
-              - { label: Foto do produto, name: imagem, widget: image, required: false }
+              - { label: Foto do produto, name: imagem, widget: image, required: false, default: "" }
 
   - name: cartas
     label: Cartas em Destaque
@@ -59,13 +58,12 @@ collections:
         file: cartas.json
         fields:
           - label: Cartas
-            name: root
+            name: items
             widget: list
             fields:
-              - { label: ID, name: id, widget: number }
               - { label: Nome da Carta, name: nome, widget: string }
               - { label: Edição, name: edicao, widget: string }
               - { label: "Número (ex. 006/165)", name: numero, widget: string }
               - { label: "Preço (R$)", name: preco, widget: number, value_type: float }
-              - { label: Foto da Carta, name: imagem, widget: image, required: false }
+              - { label: Foto da Carta, name: imagem, widget: image, required: false, default: "" }
               - { label: Descrição, name: descricao, widget: string }

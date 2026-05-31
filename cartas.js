@@ -4,7 +4,8 @@ const empty = document.getElementById('empty-cartas');
 
 async function carregarCartas() {
   const res = await fetch('cartas.json');
-  const cartas = await res.json();
+  const data = await res.json();
+  const cartas = data.items || data;
 
   if (cartas.length === 0) {
     empty.style.display = 'block';

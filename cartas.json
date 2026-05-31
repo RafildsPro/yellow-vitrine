@@ -1,20 +1,10 @@
-[
+{"items": [
   {
-    "id": 1,
     "nome": "Charizard ex - 151",
     "edicao": "151",
     "numero": "006/165",
     "preco": 450.00,
-    "imagem": "imagens/carta1.jpg",
+    "imagem": "",
     "descricao": "Carta rara em excelente estado"
-  },
-  {
-    "id": 2,
-    "nome": "Mewtwo ex - 151",
-    "edicao": "151",
-    "numero": "150/165",
-    "preco": 280.00,
-    "imagem": "imagens/carta2.jpg",
-    "descricao": "Full Art, estado impecável"
   }
-]
+]}
