@@ -18,6 +18,13 @@ collections:
             widget: list
             fields:
               - { label: Nome, name: nome, widget: string }
+              - label: Idioma
+                name: lingua
+                widget: select
+                options:
+                  - { label: "🇧🇷 Português (PT-BR)", value: "🇧🇷" }
+                  - { label: "🇺🇸 Inglês (EN)", value: "🇺🇸" }
+                  - { label: "🇯🇵 Japonês (JP)", value: "🇯🇵" }
               - label: Edição
                 name: edicao
                 widget: select

@@ -36,9 +36,12 @@ function renderizar() {
     card.innerHTML = `
       ${imgHtml}
       <div class="card-body">
-        <span class="card-edicao">${p.edicao}</span>
+        <div class="card-top">
+          <span class="card-edicao">${p.edicao}</span>
+          ${p.lingua ? `<span class="card-lingua">${p.lingua}</span>` : ''}
+        </div>
         <div class="card-nome">${p.nome}</div>
-        <div class="card-tipo">${p.tipo}</div>
+        <div class="card-tipo">${p.tipo || ''}</div>
       </div>
       <div class="card-footer">
         <div>
