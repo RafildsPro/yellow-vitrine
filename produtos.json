@@ -1,18 +1,12 @@
-{"items": [
-  {
-    "nome": "Caixa de Booster - Rivais Predestinados",
-    "edicao": "Rivais Predestinados",
-    "tipo": "Caixa de Booster",
-    "preco": 350.00,
-    "unidades": 2,
-    "imagem": ""
-  },
-  {
-    "nome": "Blister Triplo - 151",
-    "edicao": "151",
-    "tipo": "Blister",
-    "preco": 85.00,
-    "unidades": 3,
-    "imagem": ""
-  }
-]}
+{
+  "items": [
+    {
+      "imagem": "imagens/1768002176_9827741.jpg",
+      "nome": "Caixa de Booster - Escarlate e Violeta 6 - Máscaras do Crepúsculo",
+      "edicao": "Máscaras Do Crepúsculo",
+      "tipo": "Caixa de Booster",
+      "preco": 699,
+      "unidades": 5
+    }
+  ]
+}
