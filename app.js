@@ -5,6 +5,18 @@ let todosProdutos = [];
 let filtroAtivo = 'Todos';
 let filtroTipo = 'Todos';
 
+const COR_TIPO = {
+  'Caixa de Booster':          '#e63946',
+  'Blister Triplo':            '#2a9d8f',
+  'Blister Quádruplo':         '#2a9d8f',
+  'Coleção Treinador Avançado':'#7209b7',
+  'Box':                       '#f4a261',
+  'Single':                    '#457b9d',
+  'Combo de Pacotes':          '#e76f51',
+  'Mini Tin':                  '#606c38',
+  'Outros':                    '#888',
+};
+
 const CATEGORIAS = [
   { arquivo: 'produtos/caixa-booster.json',    tipo: 'Caixa de Booster' },
   { arquivo: 'produtos/blister-triplo.json',   tipo: 'Blister Triplo' },
@@ -46,11 +58,22 @@ function popularFiltro() {
   });
 }
 
+function compartilhar(nome) {
+  const url = window.location.href.split('?')[0] + '?q=' + encodeURIComponent(nome);
+  if (navigator.share) {
+    navigator.share({ title: nome, url });
+  } else {
+    navigator.clipboard.writeText(url);
+    alert('Link copiado!');
+  }
+}
+
 function criarCard(p) {
   const msg = encodeURIComponent(`Olá! Tenho interesse no produto: ${p.nome} (R$ ${p.preco.toFixed(2).replace('.', ',')})`);
   const imgHtml = p.imagem
     ? `<img class="card-img" src="${p.imagem}" alt="${p.nome}" onerror="this.outerHTML='<div class=\\'card-img-placeholder\\'>📦</div>'" />`
     : `<div class="card-img-placeholder">📦</div>`;
+  const cor = COR_TIPO[p.tipo] || '#0d1f3c';
 
   const card = document.createElement('div');
   card.className = 'card';
@@ -58,14 +81,17 @@ function criarCard(p) {
     ${imgHtml}
     <div class="card-body">
       <div class="card-top">
-        <span class="card-edicao">${p.edicao}</span>
+        <span class="card-edicao" style="background:${cor}">${p.edicao}</span>
         ${p.lingua ? `<span class="card-lingua">${p.lingua.toUpperCase()}</span>` : ''}
       </div>
       <div class="card-nome">${p.nome}</div>
     </div>
     <div class="card-footer">
       <div class="card-preco">R$ ${p.preco.toFixed(2).replace('.', ',')}</div>
-      <a class="card-wpp" href="${WPP}?text=${msg}" target="_blank">💬 Quero</a>
+      <div style="display:flex;gap:6px;align-items:center;">
+        <button class="btn-share" onclick="compartilhar('${p.nome.replace(/'/g, "\\'")}')">🔗</button>
+        <a class="card-wpp" href="${WPP}?text=${msg}" target="_blank">💬 Quero</a>
+      </div>
     </div>
   `;
   return card;
