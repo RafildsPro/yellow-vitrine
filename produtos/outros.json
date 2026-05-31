@@ -1,1 +1,18 @@
-{"items": []}
+{
+  "items": [
+    {
+      "nome": "(ING) Mini Lata - 151 - UNIDADE",
+      "edicao": "151",
+      "lingua": "us",
+      "preco": 319,
+      "imagem": "imagens/download.jpg"
+    },
+    {
+      "nome": "Display Mini Lata - 151 - (Kit com 10)",
+      "edicao": "151",
+      "lingua": "us",
+      "preco": 2999,
+      "imagem": "imagens/1758309711_7610.jpg"
+    }
+  ]
+}
