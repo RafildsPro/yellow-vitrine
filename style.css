@@ -100,44 +100,68 @@ nav a.active {
 
 /* ── HERO ── */
 .hero {
-  background: linear-gradient(135deg, #ffcb05 0%, #ffd740 50%, #ffe57a 100%);
+  background: linear-gradient(135deg, #0d1f3c 0%, #1a3a6e 40%, #ffcb05 100%);
   text-align: center;
-  padding: 56px 24px 48px;
+  padding: 56px 24px 52px;
   position: relative;
   overflow: hidden;
 }
 
-.hero::before {
-  content: '⚡';
+.hero-silhuetas {
   position: absolute;
-  font-size: 180px;
-  opacity: 0.08;
-  top: -20px;
-  left: -20px;
+  inset: 0;
   pointer-events: none;
 }
 
-.hero::after {
-  content: '🔴';
+.sil {
   position: absolute;
-  font-size: 140px;
+  font-size: 120px;
   opacity: 0.07;
-  bottom: -30px;
-  right: 20px;
-  pointer-events: none;
+  filter: grayscale(1);
+}
+
+.sil-1 { top: -10px; left: 2%;  font-size: 160px; }
+.sil-2 { top: 10px;  left: 18%; font-size: 100px; }
+.sil-3 { bottom: -10px; right: 18%; font-size: 130px; }
+.sil-4 { top: 5px;  right: 2%;  font-size: 110px; }
+.sil-5 { bottom: 5px; left: 38%; font-size: 90px; }
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: #ffcb05;
+  color: #0d1f3c;
+  font-weight: 900;
+  font-size: 0.9rem;
+  padding: 4px 20px;
+  border-radius: 50px;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 12px rgba(255,203,5,0.4);
 }
 
 .hero h1 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 900;
-  color: #2d2d2d;
-  margin-bottom: 10px;
+  color: #fff;
+  margin-bottom: 12px;
+  text-shadow: 3px 3px 0px #0d1f3c, -1px -1px 0px rgba(0,0,0,0.3);
+  letter-spacing: -0.5px;
 }
 
 .hero p {
-  font-size: 1.05rem;
-  color: #555;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.85);
   font-weight: 600;
+  line-height: 1.7;
+}
+
+.hero-pokebola {
+  display: none;
 }
 
 .hero-cartas {
