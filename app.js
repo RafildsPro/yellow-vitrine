@@ -13,7 +13,8 @@ const CATEGORIAS = [
   { arquivo: 'produtos/box.json',              tipo: 'Box' },
   { arquivo: 'produtos/single.json',           tipo: 'Single' },
   { arquivo: 'produtos/combo.json',            tipo: 'Combo de Pacotes' },
-  { arquivo: 'produtos/outros.json',           tipo: 'Outros' },
+  { arquivo: 'produtos/mini-tin.json',          tipo: 'Mini Tin' },
+  { arquivo: 'produtos/outros.json',            tipo: 'Outros' },
 ];
 
 async function carregarProdutos() {
