@@ -541,10 +541,34 @@ footer a:hover {
 
   /* Grid */
   .grid-produtos {
+    padding: 0 12px;
+    margin: 8px auto 32px;
+  }
+
+  /* Netflix mobile */
+  .netflix-secao {
+    margin-bottom: 24px;
+  }
+
+  .netflix-titulo {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .netflix-row .card {
+    min-width: 155px;
+    max-width: 155px;
+  }
+
+  .netflix-row {
+    gap: 10px;
+    padding-bottom: 8px;
+  }
+
+  /* Grid filtrado mobile */
+  .grid-filtrado {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
-    padding: 0 12px;
-    margin: 16px auto 32px;
   }
 
   /* Cards */
