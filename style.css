@@ -531,8 +531,7 @@ nav a.active {
 .card-footer {
   padding: 0 16px 16px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   gap: 8px;
 }
 
@@ -545,16 +544,17 @@ nav a.active {
 .card-wpp {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
   background: #25d366;
   color: #fff;
   text-decoration: none;
   font-weight: 700;
-  font-size: 0.8rem;
-  padding: 7px 14px;
+  font-size: 0.9rem;
+  padding: 9px 14px;
   border-radius: 20px;
   transition: background 0.2s;
-  white-space: nowrap;
+  width: 100%;
 }
 
 .card-wpp:hover {
