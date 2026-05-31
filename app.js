@@ -53,37 +53,9 @@ function renderizar() {
   });
 }
 
-const dropdown = document.getElementById('dropdown-edicao');
-const dropdownBtn = document.getElementById('dropdown-btn');
-const dropdownMenu = document.getElementById('dropdown-menu');
-
-dropdownBtn.addEventListener('click', (e) => {
-  e.stopPropagation();
-  dropdown.classList.toggle('open');
-});
-
-document.addEventListener('click', () => {
-  dropdown.classList.remove('open');
-});
-
-dropdownMenu.addEventListener('click', (e) => e.stopPropagation());
-
-document.querySelectorAll('.filtro-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.filtro-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    filtroAtivo = btn.dataset.edicao;
-
-    const edicao = btn.dataset.edicao;
-    if (edicao !== 'Todos') {
-      dropdownBtn.childNodes[0].textContent = edicao + ' ';
-      dropdown.classList.remove('open');
-    } else {
-      dropdownBtn.childNodes[0].textContent = 'Filtrar por Edição ';
-    }
-
-    renderizar();
-  });
+document.getElementById('filtro-select').addEventListener('change', (e) => {
+  filtroAtivo = e.target.value;
+  renderizar();
 });
 
 carregarProdutos();
