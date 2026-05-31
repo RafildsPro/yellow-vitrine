@@ -167,6 +167,111 @@ nav a.active {
   filter: drop-shadow(0 4px 16px rgba(0,0,0,0.3));
 }
 
+/* ── FADE IN ── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+  animation: fadeInUp 0.35s ease both;
+}
+
+.netflix-row .card:nth-child(1)  { animation-delay: 0.04s; }
+.netflix-row .card:nth-child(2)  { animation-delay: 0.08s; }
+.netflix-row .card:nth-child(3)  { animation-delay: 0.12s; }
+.netflix-row .card:nth-child(4)  { animation-delay: 0.16s; }
+.netflix-row .card:nth-child(5)  { animation-delay: 0.20s; }
+.netflix-row .card:nth-child(6)  { animation-delay: 0.24s; }
+
+/* ── HERO SOBRE ── */
+.hero-sobre {
+  background: linear-gradient(135deg, #0d1f3c 0%, #1a3a6e 50%, #ffcb05 100%);
+}
+
+/* ── PÁGINA SOBRE ── */
+.sobre-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 40px auto 60px;
+  padding: 0 24px;
+}
+
+.sobre-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  animation: fadeInUp 0.4s ease both;
+}
+
+.sobre-icon {
+  font-size: 2.2rem;
+}
+
+.sobre-card h2 {
+  font-size: 1.15rem;
+  font-weight: 900;
+  color: #0d1f3c;
+}
+
+.sobre-card p {
+  font-size: 0.92rem;
+  color: #555;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.sobre-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: transform 0.15s, box-shadow 0.15s;
+  width: fit-content;
+}
+
+.sobre-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.sobre-btn.wpp {
+  background: #25d366;
+  color: #fff;
+}
+
+.sobre-btn.insta {
+  background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366);
+  color: #fff;
+}
+
+.sobre-pix {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.sobre-pix span {
+  background: #00b4d8;
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.85rem;
+  padding: 6px 16px;
+  border-radius: 20px;
+}
+
 /* ── BOTÃO TOPO ── */
 .btn-topo {
   position: fixed;

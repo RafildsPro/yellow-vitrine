@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yellow Duck | Vitrine Pokémon</title>
+  <title>Yellow Duck TCG | Sobre</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
 </head>
@@ -13,12 +13,11 @@
     <div class="header-inner">
       <div class="logo">
         <img src="imagens/logo.png" alt="Yellow Duck TCG" class="logo-img" />
-        <span>Yellow Duck</span>
       </div>
       <nav>
-        <a href="index.html" class="active">Lacrados</a>
+        <a href="index.html">Lacrados</a>
         <a href="cartas.html">Cartas em Destaque</a>
-        <a href="sobre.html">Sobre</a>
+        <a href="sobre.html" class="active">Sobre</a>
       </nav>
       <a class="wpp-btn" href="https://wa.me/5531984622230" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
@@ -30,7 +29,8 @@
   </header>
 
   <main>
-    <section class="hero">
+
+    <section class="hero hero-sobre">
       <div class="hero-silhuetas">
         <span class="sil sil-1">⚡</span>
         <span class="sil sil-2">🔥</span>
@@ -40,57 +40,54 @@
       </div>
       <div class="hero-content">
         <img src="imagens/logo.png" alt="Yellow Duck TCG" class="hero-logo" />
-        <h1>Menu de Itens Pokémon</h1>
-        <p>Box • Blisters • Boosters • Kits • Coleções<br>Tudo Original e Lacrado!</p>
+        <h1>Yellow Duck TCG</h1>
+        <p>Sua loja de confiança para produtos Pokémon originais e lacrados!</p>
       </div>
     </section>
 
-    <section class="filtros">
-      <div class="filtros-inner">
-        <select id="filtro-tipo">
-          <option value="Todos">Tipo de Produto</option>
-          <option value="Caixa de Booster">Caixa de Booster</option>
-          <option value="Blister Triplo">Blister Triplo</option>
-          <option value="Blister Quádruplo">Blister Quádruplo</option>
-          <option value="Coleção Treinador Avançado">Coleção Treinador Avançado</option>
-          <option value="Box">Box</option>
-          <option value="Single">Single</option>
-          <option value="Combo de Pacotes">Combo de Pacotes</option>
-          <option value="Mini Tin">Mini Tin</option>
-          <option value="Outros">Outros</option>
-        </select>
-        <select id="filtro-select">
-          <option value="Todos">Todas as Edições</option>
-        </select>
+    <section class="sobre-grid">
+
+      <div class="sobre-card">
+        <div class="sobre-icon">🦆</div>
+        <h2>Quem somos</h2>
+        <p>A Yellow Duck TCG nasceu da paixão pelo universo Pokémon. Trabalhamos com produtos 100% originais e lacrados, com atenção especial à qualidade e à satisfação de cada cliente.</p>
       </div>
+
+      <div class="sobre-card">
+        <div class="sobre-icon">💬</div>
+        <h2>Atendimento</h2>
+        <p>Prefere conversar antes de fechar? Entre em contato! Estamos sempre disponíveis para tirar dúvidas, negociar e encontrar o melhor produto para você.</p>
+        <a class="sobre-btn wpp" href="https://wa.me/5531984622230" target="_blank">
+          💬 Falar no WhatsApp
+        </a>
+        <a class="sobre-btn insta" href="https://instagram.com/yellowducktcg" target="_blank">
+          📸 @yellowducktcg
+        </a>
+      </div>
+
+      <div class="sobre-card">
+        <div class="sobre-icon">💳</div>
+        <h2>Pagamento</h2>
+        <p>Aceitamos <strong>Pix</strong> como forma principal de pagamento. Rápido, seguro e sem taxas! Para outras formas, entre em contato e conversamos.</p>
+        <div class="sobre-pix">
+          <span>⚡ Pix</span>
+        </div>
+      </div>
+
+      <div class="sobre-card">
+        <div class="sobre-icon">📦</div>
+        <h2>Envio & Retirada</h2>
+        <p>Enviamos para todo o Brasil com embalagem segura para proteger seus produtos. Retirada presencial também disponível — consulte disponibilidade pelo WhatsApp!</p>
+      </div>
+
     </section>
 
-    <section class="grid-produtos" id="grid"></section>
-
-    <div class="empty-state" id="empty" style="display:none;">
-      <p>Nenhum produto encontrado para essa edição. 😢</p>
-    </div>
   </main>
 
-  <button class="btn-topo" id="btn-topo" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
-
   <footer>
-    <p>© 2025 Yellow Duck · Todos os direitos reservados</p>
+    <p>© 2025 Yellow Duck TCG · Todos os direitos reservados</p>
     <a href="https://wa.me/5531984622230" target="_blank">📲 (31) 98462-2230</a>
   </footer>
 
-  <script src="app.js"></script>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
 </body>
 </html>
