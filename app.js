@@ -8,7 +8,20 @@ async function carregarProdutos() {
   const res = await fetch('produtos.json');
   const data = await res.json();
   produtos = data.items || data;
+  popularFiltro();
   renderizar();
+}
+
+function popularFiltro() {
+  const select = document.getElementById('filtro-select');
+  const edicoes = [...new Set(produtos.map(p => p.edicao).filter(Boolean))].sort();
+  select.innerHTML = '<option value="Todos">Todas as Edições</option>';
+  edicoes.forEach(e => {
+    const opt = document.createElement('option');
+    opt.value = e;
+    opt.textContent = e;
+    select.appendChild(opt);
+  });
 }
 
 function renderizar() {
