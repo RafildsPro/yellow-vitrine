@@ -572,9 +572,19 @@ nav a.active {
   width: 100%;
 }
 
+.card-carta {
+  cursor: pointer;
+}
+
 .card-carta .card-img {
   aspect-ratio: 3 / 4;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-carta:hover .card-img {
+  transform: scale(1.06);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.25);
 }
 
 .card-carta .card-img-placeholder {
