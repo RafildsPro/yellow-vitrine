@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "nome": "(PT-BR) Box Coleção Ilustração Parceiro Inicial - Series 1",
+      "lingua": "br",
+      "preco": 119,
+      "imagem": "imagens/1772718571_9117.jpg",
+      "edicao": "Box"
+    },
+    {
       "nome": "(PT-BR) Box Coleção - Zacian do Lupo Ex",
       "lingua": "br",
       "preco": 99,
@@ -26,13 +33,6 @@
       "lingua": "br",
       "preco": 99,
       "imagem": "imagens/1761756724_8042.jpg",
-      "edicao": "Box"
-    },
-    {
-      "nome": "(PT-BR) Box Coleção Ilustração Parceiro Inicial - Series 1",
-      "lingua": "br",
-      "preco": 119,
-      "imagem": "imagens/1772718571_9117.jpg",
       "edicao": "Box"
     },
     {
