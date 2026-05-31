@@ -27,7 +27,10 @@ async function carregarCartas() {
       <div class="card-body">
         <div class="card-top">
           <span class="card-edicao">${c.edicao}</span>
-          ${c.condicao ? `<span class="card-condicao">${c.condicao}</span>` : ''}
+          <div style="display:flex;gap:4px;align-items:center;">
+            ${c.lingua ? `<span class="card-lingua">${c.lingua.toUpperCase()}</span>` : ''}
+            ${c.condicao ? `<span class="card-condicao">${c.condicao}</span>` : ''}
+          </div>
         </div>
         <div class="card-nome">${c.nome}</div>
       </div>

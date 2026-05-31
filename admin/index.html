@@ -80,6 +80,12 @@
               fields: [{ label: 'Cartas', name: 'items', widget: 'list', fields: [
                 { label: 'Nome da Carta', name: 'nome', widget: 'string' },
                 { label: 'Edição', name: 'edicao', widget: 'string' },
+                { label: 'Idioma', name: 'lingua', widget: 'select', options: [
+                  { label: '🇧🇷 Português (PT-BR)', value: 'br' },
+                  { label: '🇺🇸 Inglês (EN)', value: 'us' },
+                  { label: '🇯🇵 Japonês (JP)', value: 'jp' },
+                  { label: '🇨🇳 Chinês (CN)', value: 'cn' }
+                ]},
                 { label: 'Preço (R$)', name: 'preco', widget: 'number', value_type: 'float' },
                 { label: 'Foto da Carta', name: 'imagem', widget: 'image', required: false },
                 { label: 'Condição', name: 'condicao', widget: 'select', options: ['M', 'NM', 'SP', 'MP', 'HP', 'D'] }
