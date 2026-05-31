@@ -1,1 +1,30 @@
-{"items": []}
+{"items": [
+  {
+    "imagem": "imagens/1768002176_9827741.jpg",
+    "nome": "(PT-BR) Caixa de Booster - Escarlate e Violeta 6 - Máscaras do Crepúsculo",
+    "edicao": "Máscaras Do Crepúsculo",
+    "lingua": "br",
+    "preco": 699
+  },
+  {
+    "imagem": "imagens/1743869919_5001887.jpg",
+    "nome": "(PT-BR) Caixa de Booster - Escarlate e Violeta 9 - Amigos de Jornada",
+    "edicao": "Amigos de Jornada",
+    "lingua": "br",
+    "preco": 379
+  },
+  {
+    "imagem": "imagens/1755639880_5851957.jpg",
+    "nome": "(PT-BR) Caixa de Booster - Escarlate e Violeta 3 - Obsidiana em Chamas",
+    "edicao": "Obsidiana em Chamas",
+    "lingua": "br",
+    "preco": 639
+  },
+  {
+    "imagem": "imagens/1766327163_6864478.jpg",
+    "nome": "(PT-BR) Caixa de Booster - Espada e Escudo 11 - Origem Perdida",
+    "edicao": "Origem Perdida",
+    "lingua": "br",
+    "preco": 1250
+  }
+]}
