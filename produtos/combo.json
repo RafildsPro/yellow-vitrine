@@ -13,6 +13,20 @@
       "lingua": "br",
       "preco": 299,
       "imagem": "imagens/1730471009_853.jpg"
+    },
+    {
+      "nome": "(PT-BR) Combo de Pacotes - Escarlate e Violeta 10.5 - Fogo Branco",
+      "edicao": "Fogo Branco",
+      "lingua": "br",
+      "preco": 349,
+      "imagem": "imagens/1752781394_8416-1-.jpg"
+    },
+    {
+      "nome": "(PT-BR) Combo de Pacotes - Escarlate e Violeta - Destinos de Paldea",
+      "edicao": "Destinos de Paldea",
+      "lingua": "br",
+      "preco": 449,
+      "imagem": "imagens/1702302051_1136.jpg"
     }
   ]
 }
