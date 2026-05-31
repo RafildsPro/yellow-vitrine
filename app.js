@@ -3,6 +3,7 @@ const grid = document.getElementById('grid');
 const empty = document.getElementById('empty');
 let produtos = [];
 let filtroAtivo = 'Todos';
+let filtroTipo = 'Todos';
 
 const CATEGORIAS = [
   { arquivo: 'produtos/caixa-booster.json',    tipo: 'Caixa de Booster' },
@@ -33,7 +34,8 @@ async function carregarProdutos() {
 
 function popularFiltro() {
   const select = document.getElementById('filtro-select');
-  const edicoes = [...new Set(produtos.map(p => p.edicao).filter(Boolean))].sort();
+  const base = filtroTipo === 'Todos' ? produtos : produtos.filter(p => p.tipo === filtroTipo);
+  const edicoes = [...new Set(base.map(p => p.edicao).filter(Boolean))].sort();
   select.innerHTML = '<option value="Todos">Todas as Edições</option>';
   edicoes.forEach(e => {
     const opt = document.createElement('option');
@@ -44,9 +46,11 @@ function popularFiltro() {
 }
 
 function renderizar() {
-  const filtrados = filtroAtivo === 'Todos'
-    ? produtos
-    : produtos.filter(p => p.edicao === filtroAtivo);
+  const filtrados = produtos.filter(p => {
+    const porTipo = filtroTipo === 'Todos' || p.tipo === filtroTipo;
+    const porEdicao = filtroAtivo === 'Todos' || p.edicao === filtroAtivo;
+    return porTipo && porEdicao;
+  });
 
   grid.innerHTML = '';
 
@@ -90,6 +94,14 @@ function renderizar() {
 
 document.getElementById('filtro-select').addEventListener('change', (e) => {
   filtroAtivo = e.target.value;
+  renderizar();
+});
+
+document.getElementById('filtro-tipo').addEventListener('change', (e) => {
+  filtroTipo = e.target.value;
+  filtroAtivo = 'Todos';
+  document.getElementById('filtro-select').value = 'Todos';
+  popularFiltro();
   renderizar();
 });
 

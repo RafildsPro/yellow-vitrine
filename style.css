@@ -166,7 +166,7 @@ nav a.active {
   gap: 12px;
 }
 
-#filtro-select {
+#filtro-tipo, #filtro-select {
   appearance: none;
   background: #ffcb05 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 12 12'%3E%3Cpath fill='%232d2d2d' d='M6 8L1 3h10z'/%3E%3C/svg%3E") no-repeat right 18px center;
   border: 3px solid #ffcb05;
@@ -182,8 +182,8 @@ nav a.active {
   box-shadow: 0 4px 12px rgba(255, 203, 5, 0.35);
 }
 
-#filtro-select:hover,
-#filtro-select:focus {
+#filtro-tipo:hover, #filtro-tipo:focus,
+#filtro-select:hover, #filtro-select:focus {
   background-color: #ffd740;
   border-color: #ffd740;
   outline: none;
