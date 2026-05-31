@@ -155,8 +155,9 @@ nav a.active {
 
 .filtros-inner {
   display: flex;
+  align-items: center;
+  gap: 12px;
   flex-wrap: wrap;
-  gap: 8px;
 }
 
 .filtro-btn {
@@ -170,16 +171,105 @@ nav a.active {
   color: #555;
   cursor: pointer;
   transition: all 0.18s;
+  width: 100%;
+  text-align: left;
 }
 
 .filtro-btn:hover {
   border-color: #ffcb05;
   color: #2d2d2d;
+  background: #fffbea;
 }
 
 .filtro-btn.active {
   background: #ffcb05;
   border-color: #ffcb05;
+  color: #2d2d2d;
+}
+
+#btn-todos {
+  width: auto;
+  flex-shrink: 0;
+}
+
+/* ── DROPDOWN ── */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 6px 18px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #555;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.18s;
+  white-space: nowrap;
+}
+
+.dropdown-toggle:hover,
+.dropdown.open .dropdown-toggle {
+  border-color: #ffcb05;
+  color: #2d2d2d;
+}
+
+.dropdown.open .dropdown-toggle {
+  background: #ffcb05;
+}
+
+.dropdown-arrow {
+  display: inline-block;
+  transition: transform 0.2s;
+  font-size: 0.75rem;
+}
+
+.dropdown.open .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 8px;
+  z-index: 200;
+  min-width: 220px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.dropdown.open .dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.dropdown-menu .filtro-btn {
+  border-radius: 10px;
+  border: none;
+  padding: 8px 14px;
+  font-size: 0.88rem;
+}
+
+.dropdown-menu .filtro-btn:hover {
+  background: #fffbea;
+  border: none;
+}
+
+.dropdown-menu .filtro-btn.active {
+  background: #ffcb05;
   color: #2d2d2d;
 }
 
