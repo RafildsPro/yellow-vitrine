@@ -43,7 +43,6 @@ function renderizar() {
       <div class="card-footer">
         <div>
           <div class="card-preco">R$ ${p.preco.toFixed(2).replace('.', ',')}</div>
-          <div class="card-unidades">${p.unidades} unid. disponível${p.unidades !== 1 ? 'is' : ''}</div>
         </div>
         <a class="card-wpp" href="${WPP}?text=${msg}" target="_blank">
           💬 Quero

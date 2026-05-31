@@ -38,16 +38,8 @@ collections:
                   - Máscaras Do Crepúsculo
                   - Fenda Paradoxal
                   - Obsidiana Em Chamas
-              - label: Tipo
-                name: tipo
-                widget: select
-                options:
-                  - Caixa de Booster
-                  - Blister
-                  - Kit
-                  - Coleção Treinador
+              - { label: Tipo, name: tipo, widget: string, hint: "Ex: Caixa de Booster, Blister, Kit..." }
               - { label: "Preço (R$)", name: preco, widget: number, value_type: float }
-              - { label: Unidades disponíveis, name: unidades, widget: number }
               - { label: Foto do produto, name: imagem, widget: image, required: false, default: "" }
 
   - name: cartas
