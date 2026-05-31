@@ -269,14 +269,9 @@ nav a.active {
 }
 
 .card-preco {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 900;
-  color: #fff;
-  background: #ffcb05;
-  display: inline-block;
-  padding: 4px 14px;
-  border-radius: 20px;
-  box-shadow: 0 2px 8px rgba(255,203,5,0.4);
+  color: #0d1f3c;
 }
 
 .card-wpp {
