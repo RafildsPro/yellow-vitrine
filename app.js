@@ -4,10 +4,29 @@ const empty = document.getElementById('empty');
 let produtos = [];
 let filtroAtivo = 'Todos';
 
+const CATEGORIAS = [
+  { arquivo: 'produtos/caixa-booster.json',    tipo: 'Caixa de Booster' },
+  { arquivo: 'produtos/blister-triplo.json',   tipo: 'Blister Triplo' },
+  { arquivo: 'produtos/blister-quadruplo.json',tipo: 'Blister Quádruplo' },
+  { arquivo: 'produtos/colecao-treinador.json',tipo: 'Coleção Treinador Avançado' },
+  { arquivo: 'produtos/box.json',              tipo: 'Box' },
+  { arquivo: 'produtos/single.json',           tipo: 'Single' },
+  { arquivo: 'produtos/combo.json',            tipo: 'Combo de Pacotes' },
+  { arquivo: 'produtos/outros.json',           tipo: 'Outros' },
+];
+
 async function carregarProdutos() {
-  const res = await fetch('produtos.json');
-  const data = await res.json();
-  produtos = data.items || data;
+  const resultados = await Promise.all(
+    CATEGORIAS.map(async cat => {
+      try {
+        const res = await fetch(cat.arquivo);
+        const data = await res.json();
+        const items = data.items || [];
+        return items.map(p => ({ ...p, tipo: cat.tipo }));
+      } catch { return []; }
+    })
+  );
+  produtos = resultados.flat();
   popularFiltro();
   renderizar();
 }

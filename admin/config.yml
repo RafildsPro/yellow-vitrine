@@ -6,18 +6,19 @@ media_folder: imagens
 public_folder: imagens
 
 collections:
-  - name: produtos
-    label: Produtos Lacrados
+  - name: caixa-booster
+    label: Caixa de Booster
     files:
-      - label: Lista de Produtos
-        name: produtos
-        file: produtos.json
+      - label: Caixa de Booster
+        name: caixa-booster
+        file: produtos/caixa-booster.json
         fields:
           - label: Produtos
             name: items
             widget: list
-            fields:
+            fields: &produto_fields
               - { label: Nome, name: nome, widget: string }
+              - { label: Edição, name: edicao, widget: string, hint: "Ex: Rivais Predestinados, 151..." }
               - label: Idioma
                 name: lingua
                 widget: select
@@ -26,10 +27,176 @@ collections:
                   - { label: "🇺🇸 Inglês (EN)", value: "us" }
                   - { label: "🇯🇵 Japonês (JP)", value: "jp" }
                   - { label: "🇨🇳 Chinês (CN)", value: "cn" }
-              - { label: Edição, name: edicao, widget: string, hint: "Ex: Rivais Predestinados, 151, Obsidiana Em Chamas..." }
-              - { label: Tipo, name: tipo, widget: string, hint: "Ex: Caixa de Booster, Blister, Kit..." }
               - { label: "Preço (R$)", name: preco, widget: number, value_type: float }
-              - { label: Foto do produto, name: imagem, widget: image, required: false, default: "" }
+              - { label: Foto, name: imagem, widget: image, required: false }
+
+  - name: blister-triplo
+    label: Blister Triplo
+    files:
+      - label: Blister Triplo
+        name: blister-triplo
+        file: produtos/blister-triplo.json
+        fields:
+          - label: Produtos
+            name: items
+            widget: list
+            fields:
+              - { label: Nome, name: nome, widget: string }
+              - { label: Edição, name: edicao, widget: string }
+              - label: Idioma
+                name: lingua
+                widget: select
+                options:
+                  - { label: "🇧🇷 Português (PT-BR)", value: "br" }
+                  - { label: "🇺🇸 Inglês (EN)", value: "us" }
+                  - { label: "🇯🇵 Japonês (JP)", value: "jp" }
+                  - { label: "🇨🇳 Chinês (CN)", value: "cn" }
+              - { label: "Preço (R$)", name: preco, widget: number, value_type: float }
+              - { label: Foto, name: imagem, widget: image, required: false }
+
+  - name: blister-quadruplo
+    label: Blister Quádruplo
+    files:
+      - label: Blister Quádruplo
+        name: blister-quadruplo
+        file: produtos/blister-quadruplo.json
+        fields:
+          - label: Produtos
+            name: items
+            widget: list
+            fields:
+              - { label: Nome, name: nome, widget: string }
+              - { label: Edição, name: edicao, widget: string }
+              - label: Idioma
+                name: lingua
+                widget: select
+                options:
+                  - { label: "🇧🇷 Português (PT-BR)", value: "br" }
+                  - { label: "🇺🇸 Inglês (EN)", value: "us" }
+                  - { label: "🇯🇵 Japonês (JP)", value: "jp" }
+                  - { label: "🇨🇳 Chinês (CN)", value: "cn" }
+              - { label: "Preço (R$)", name: preco, widget: number, value_type: float }
+              - { label: Foto, name: imagem, widget: image, required: false }
+
+  - name: colecao-treinador
+    label: Coleção Treinador Avançado
+    files:
+      - label: Coleção Treinador Avançado
+        name: colecao-treinador
+        file: produtos/colecao-treinador.json
+        fields:
+          - label: Produtos
+            name: items
+            widget: list
+            fields:
+              - { label: Nome, name: nome, widget: string }
+              - { label: Edição, name: edicao, widget: string }
+              - label: Idioma
+                name: lingua
+                widget: select
+                options:
+                  - { label: "🇧🇷 Português (PT-BR)", value: "br" }
+                  - { label: "🇺🇸 Inglês (EN)", value: "us" }
+                  - { label: "🇯🇵 Japonês (JP)", value: "jp" }
+                  - { label: "🇨🇳 Chinês (CN)", value: "cn" }
+              - { label: "Preço (R$)", name: preco, widget: number, value_type: float }
+              - { label: Foto, name: imagem, widget: image, required: false }
+
+  - name: box
+    label: Box
+    files:
+      - label: Box
+        name: box
+        file: produtos/box.json
+        fields:
+          - label: Produtos
+            name: items
+            widget: list
+            fields:
+              - { label: Nome, name: nome, widget: string }
+              - { label: Edição, name: edicao, widget: string }
+              - label: Idioma
+                name: lingua
+                widget: select
+                options:
+                  - { label: "🇧🇷 Português (PT-BR)", value: "br" }
+                  - { label: "🇺🇸 Inglês (EN)", value: "us" }
+                  - { label: "🇯🇵 Japonês (JP)", value: "jp" }
+                  - { label: "🇨🇳 Chinês (CN)", value: "cn" }
+              - { label: "Preço (R$)", name: preco, widget: number, value_type: float }
+              - { label: Foto, name: imagem, widget: image, required: false }
+
+  - name: single
+    label: Single
+    files:
+      - label: Single
+        name: single
+        file: produtos/single.json
+        fields:
+          - label: Produtos
+            name: items
+            widget: list
+            fields:
+              - { label: Nome, name: nome, widget: string }
+              - { label: Edição, name: edicao, widget: string }
+              - label: Idioma
+                name: lingua
+                widget: select
+                options:
+                  - { label: "🇧🇷 Português (PT-BR)", value: "br" }
+                  - { label: "🇺🇸 Inglês (EN)", value: "us" }
+                  - { label: "🇯🇵 Japonês (JP)", value: "jp" }
+                  - { label: "🇨🇳 Chinês (CN)", value: "cn" }
+              - { label: "Preço (R$)", name: preco, widget: number, value_type: float }
+              - { label: Foto, name: imagem, widget: image, required: false }
+
+  - name: combo
+    label: Combo de Pacotes
+    files:
+      - label: Combo de Pacotes
+        name: combo
+        file: produtos/combo.json
+        fields:
+          - label: Produtos
+            name: items
+            widget: list
+            fields:
+              - { label: Nome, name: nome, widget: string }
+              - { label: Edição, name: edicao, widget: string }
+              - label: Idioma
+                name: lingua
+                widget: select
+                options:
+                  - { label: "🇧🇷 Português (PT-BR)", value: "br" }
+                  - { label: "🇺🇸 Inglês (EN)", value: "us" }
+                  - { label: "🇯🇵 Japonês (JP)", value: "jp" }
+                  - { label: "🇨🇳 Chinês (CN)", value: "cn" }
+              - { label: "Preço (R$)", name: preco, widget: number, value_type: float }
+              - { label: Foto, name: imagem, widget: image, required: false }
+
+  - name: outros
+    label: Outros
+    files:
+      - label: Outros
+        name: outros
+        file: produtos/outros.json
+        fields:
+          - label: Produtos
+            name: items
+            widget: list
+            fields:
+              - { label: Nome, name: nome, widget: string }
+              - { label: Edição, name: edicao, widget: string }
+              - label: Idioma
+                name: lingua
+                widget: select
+                options:
+                  - { label: "🇧🇷 Português (PT-BR)", value: "br" }
+                  - { label: "🇺🇸 Inglês (EN)", value: "us" }
+                  - { label: "🇯🇵 Japonês (JP)", value: "jp" }
+                  - { label: "🇨🇳 Chinês (CN)", value: "cn" }
+              - { label: "Preço (R$)", name: preco, widget: number, value_type: float }
+              - { label: Foto, name: imagem, widget: image, required: false }
 
   - name: cartas
     label: Cartas em Destaque
@@ -46,5 +213,5 @@ collections:
               - { label: Edição, name: edicao, widget: string }
               - { label: "Número (ex. 006/165)", name: numero, widget: string }
               - { label: "Preço (R$)", name: preco, widget: number, value_type: float }
-              - { label: Foto da Carta, name: imagem, widget: image, required: false, default: "" }
+              - { label: Foto da Carta, name: imagem, widget: image, required: false }
               - { label: Descrição, name: descricao, widget: string }
