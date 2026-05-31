@@ -1,10 +1,62 @@
-{"items": [
-  {
-    "nome": "Charizard ex - 151",
-    "edicao": "151",
-    "numero": "006/165",
-    "preco": 450.00,
-    "imagem": "",
-    "descricao": "Carta rara em excelente estado"
-  }
-]}
+{
+  "items": [
+    {
+      "nome": "Charizard (02/25)",
+      "edicao": "Celebrações",
+      "numero": "006/165",
+      "preco": 2999,
+      "imagem": "imagens/35s_02.jpg",
+      "descricao": "Carta rara em excelente estado",
+      "lingua": "us",
+      "condicao": "NM"
+    },
+    {
+      "nome": "Umbreon Star (15/25)",
+      "edicao": "Celebrações",
+      "lingua": "br",
+      "preco": 489,
+      "imagem": "imagens/1888s_15.jpg",
+      "condicao": "NM"
+    },
+    {
+      "nome": "Psyduck da Misty (071/063)",
+      "edicao": "Hot Wind Arena",
+      "lingua": "jp",
+      "preco": 499,
+      "imagem": "imagens/67f43b02d25d2-gaqjm-aeu0x-6e06d2ddc800372809f3468dca0522d4.jpg",
+      "condicao": "NM"
+    },
+    {
+      "nome": "Pikachu (05/25)",
+      "edicao": "Celebrações",
+      "lingua": "br",
+      "preco": 49,
+      "imagem": "imagens/15s_05.jpg",
+      "condicao": "NM"
+    },
+    {
+      "nome": "Pikachu (Illustration Rare) (0708-09/115)",
+      "edicao": "Gem Pack Vol.1",
+      "lingua": "cn",
+      "preco": 299,
+      "imagem": "imagens/67c0abb6c9269-di437-dio78-191c3e3ac6d4151877101d3831a27087.jpg",
+      "condicao": "NM"
+    },
+    {
+      "nome": "Mew ex - UPC Metal Card (205/∞)",
+      "edicao": "Promos",
+      "lingua": "us",
+      "preco": 419,
+      "imagem": "imagens/6646_205.jpg",
+      "condicao": "NM"
+    },
+    {
+      "nome": "Zapdos ex (202/165)",
+      "edicao": "151",
+      "lingua": "br",
+      "preco": 650,
+      "imagem": "imagens/805s_202.jpg",
+      "condicao": "NM"
+    }
+  ]
+}
