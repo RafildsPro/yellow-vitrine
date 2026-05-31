@@ -1,1 +1,67 @@
-{"items": []}
+{
+  "items": [
+    {
+      "nome": "(PT-BR) Box Coleção - Zacian do Lupo Ex",
+      "lingua": "br",
+      "preco": 99,
+      "imagem": "imagens/1744900664_4213.jpg",
+      "edicao": "Box"
+    },
+    {
+      "nome": "(PT-BR) Box Coleção - Escarlate e Violeta - Bellibolt Ex da Kissera",
+      "lingua": "br",
+      "preco": 99,
+      "imagem": "imagens/1744899513_7567.jpg",
+      "edicao": "Box"
+    },
+    {
+      "nome": "(PT-BR) Box Coleção de Torneios Lílian",
+      "lingua": "br",
+      "preco": 109,
+      "imagem": "imagens/1745503208_6290.jpg",
+      "edicao": "Box"
+    },
+    {
+      "nome": "(PT-BR) Box Coleção - Mega Lucario ex",
+      "lingua": "br",
+      "preco": 99,
+      "imagem": "imagens/1761756724_8042.jpg",
+      "edicao": "Box"
+    },
+    {
+      "nome": "(PT-BR) Box Coleção Ilustração Parceiro Inicial - Series 1",
+      "lingua": "br",
+      "preco": 119,
+      "imagem": "imagens/1772718571_9117.jpg",
+      "edicao": "Box"
+    },
+    {
+      "nome": "(PT-BR) Box Coleção - Dia de Pokémon 2026",
+      "lingua": "br",
+      "preco": 99,
+      "imagem": "imagens/1768388829_9967.jpg",
+      "edicao": "Box"
+    },
+    {
+      "nome": "(PT-BR) Box Coleção - Mega Charizard Y",
+      "lingua": "br",
+      "preco": 129,
+      "imagem": "imagens/1770642411_1649.jpg",
+      "edicao": "Box"
+    },
+    {
+      "nome": "(PT-BR) Box Coleção - Mega Charizard X",
+      "lingua": "br",
+      "preco": 129,
+      "imagem": "imagens/1770642425_1399.jpg",
+      "edicao": "Box"
+    },
+    {
+      "nome": " (PT-BR) Baralho Pré Construído - Baralho Batalha de Liga - Mewtwo ex da Equipe Rocket",
+      "lingua": "br",
+      "preco": 89,
+      "imagem": "imagens/1765374694_7373.jpg",
+      "edicao": "Box"
+    }
+  ]
+}
