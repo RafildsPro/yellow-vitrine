@@ -1,1 +1,88 @@
-{"items": []}
+{
+  "items": [
+    {
+      "nome": "(ING) Coleção Treinador Avançado - Céus em Evolução - Eevee Evolutions 02",
+      "edicao": "Céus em Evolução",
+      "lingua": "us",
+      "preco": 8999,
+      "imagem": "imagens/1663956743_5211.jpg"
+    },
+    {
+      "nome": "(ING) Coleção Treinador Avançado - Espada e Escudo - Celebrações",
+      "edicao": "Celebrações",
+      "lingua": "us",
+      "preco": 5899,
+      "imagem": "imagens/1750786580_9944.jpg"
+    },
+    {
+      "nome": "(ING) Coleção Treinador Avançado - Escarlate e Violeta - 151",
+      "edicao": "151",
+      "lingua": "us",
+      "preco": 8999,
+      "imagem": "imagens/1696267228_8291.jpg"
+    },
+    {
+      "nome": "(PT-BR) Coleção Treinador Avançado - Escarlate e Violeta 7 - Coroa Estelar",
+      "edicao": "Coroa Estelar",
+      "lingua": "br",
+      "preco": 699,
+      "imagem": "imagens/1719500176_9582.jpg"
+    },
+    {
+      "nome": "(PT-BR) Coleção Treinador Avançado - Escarlate e Violeta 10 - Rivais Predestinados",
+      "edicao": "Rivais Predestinados",
+      "lingua": "br",
+      "preco": 1099,
+      "imagem": "imagens/1746651236_4667.jpg"
+    },
+    {
+      "nome": "(ING) Coleção Treinador Avançado - Megaevolução 1 - Megaevolução - Mega Gardevoir",
+      "edicao": "Megaevolução",
+      "lingua": "us",
+      "preco": 1099,
+      "imagem": "imagens/1754683770_1795.jpg"
+    },
+    {
+      "nome": "(PT-BR) Coleção Treinador Avançado - Megaevolução 2 - Fogo Fantasmagórico",
+      "edicao": "Fogo Fantasmagórico",
+      "lingua": "br",
+      "preco": 349,
+      "imagem": "imagens/1760453056_2517.jpg"
+    },
+    {
+      "nome": "(ING) Coleção Treinador Avançado - Megaevolução 2 - Fogo Fantasmagórico",
+      "edicao": "Fogo Fantasmagórico",
+      "lingua": "us",
+      "preco": 899,
+      "imagem": "imagens/1760463089_3355.jpg"
+    },
+    {
+      "nome": "(ING) Coleção Treinador Avançado - Megaevolução 2.5 - Heróis Excelsos",
+      "edicao": "Heróis Excelsos",
+      "lingua": "us",
+      "preco": 799,
+      "imagem": "imagens/1767711005_5663.jpg"
+    },
+    {
+      "nome": "(ING) Coleção Treinador Avançado - Megaevolução 3 - Equilíbrio Perfeito",
+      "edicao": "Equilíbrio Perfeito",
+      "lingua": "us",
+      "preco": 349,
+      "imagem": "imagens/1772196443_7754.jpg"
+    },
+    {
+      "nome": "(PT-BR) Coleção Treinador Avançado - Megaevolução 4 - Caos Ascendente",
+      "edicao": "Caos Ascendente",
+      "lingua": "br",
+      "preco": 346,
+      "imagem": "imagens/1776953879_5593.jpg"
+    },
+    {
+      "nome": "(ING) Coleção Treinador Avançado - Megaevolução 4 - Caos Ascendente",
+      "edicao": "Caos Ascendente",
+      "lingua": "us",
+      "preco": 449,
+      "imagem": "imagens/1776084034_6787.jpg"
+    }
+  ]
+}
