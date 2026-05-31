@@ -51,7 +51,7 @@ function renderizar() {
       <div class="card-body">
         <div class="card-top">
           <span class="card-edicao">${p.edicao}</span>
-          ${p.lingua ? `<img class="card-lingua" src="https://flagcdn.com/24x18/${p.lingua}.png" alt="${p.lingua}" title="${p.lingua.toUpperCase()}" />` : ''}
+          ${p.lingua ? `<span class="card-lingua">${p.lingua.toUpperCase()}</span>` : ''}
         </div>
         <div class="card-nome">${p.nome}</div>
         <div class="card-tipo">${p.tipo || ''}</div>

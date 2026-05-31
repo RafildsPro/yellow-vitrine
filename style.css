@@ -255,11 +255,13 @@ nav a.active {
 }
 
 .card-lingua {
-  width: 24px;
-  height: 18px;
-  border-radius: 3px;
-  object-fit: cover;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: #0d1f3c;
+  background: #e8edf5;
+  border-radius: 6px;
+  padding: 2px 6px;
+  letter-spacing: 0.5px;
 }
 
 .card-nome {
