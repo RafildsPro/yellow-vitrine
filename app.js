@@ -88,10 +88,7 @@ function criarCard(p) {
     </div>
     <div class="card-footer">
       <div class="card-preco">R$ ${p.preco.toFixed(2).replace('.', ',')}</div>
-      <div style="display:flex;gap:6px;align-items:center;">
-        <button class="btn-share" onclick="compartilhar('${p.nome.replace(/'/g, "\\'")}')">🔗</button>
-        <a class="card-wpp" href="${WPP}?text=${msg}" target="_blank">💬 Quero</a>
-      </div>
+      <a class="card-wpp" href="${WPP}?text=${msg}" target="_blank">💬 Quero</a>
     </div>
   `;
   return card;
