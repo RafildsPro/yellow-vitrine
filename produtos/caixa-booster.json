@@ -69,6 +69,20 @@
       "lingua": "br",
       "preco": 360,
       "imagem": "imagens/1776953948_7745.jpg"
+    },
+    {
+      "nome": "(CHN) Caixa de Booster - GEM Pack Vol.2",
+      "edicao": "Gem Pack Vol.2",
+      "lingua": "cn",
+      "preco": 649,
+      "imagem": "imagens/1745954425_9264.jpg"
+    },
+    {
+      "nome": "(CHN) Caixa de Booster - GEM Pack Vol.3",
+      "edicao": "Gem Pack Vol.3",
+      "lingua": "cn",
+      "preco": 649,
+      "imagem": "imagens/1756995701_3375.jpg"
     }
   ]
 }
