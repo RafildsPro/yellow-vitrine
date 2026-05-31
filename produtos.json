@@ -2,7 +2,7 @@
   "items": [
     {
       "imagem": "imagens/1768002176_9827741.jpg",
-      "nome": "Caixa de Booster - Escarlate e Violeta 6 - Máscaras do Crepúsculo",
+      "nome": "(PT-BR) Caixa de Booster - Escarlate e Violeta 6 - Máscaras do Crepúsculo",
       "edicao": "Máscaras Do Crepúsculo",
       "tipo": "Caixa de Booster",
       "preco": 699,
@@ -24,6 +24,14 @@
       "edicao": "Obsidiana em Chamas",
       "tipo": "Caixa de Booster",
       "preco": 639
+    },
+    {
+      "imagem": "imagens/1766327163_6864478.jpg",
+      "nome": "(PT-BR) Caixa de Booster - Espada e Escudo 11 - Origem Perdida",
+      "lingua": "🇧🇷",
+      "edicao": "Origem Perdida",
+      "tipo": "Caixa de Booster",
+      "preco": 1250
     }
   ]
 }
