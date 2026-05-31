@@ -8,60 +8,64 @@ public_folder: imagens
 collections:
   - name: produtos
     label: Produtos Lacrados
-    label_singular: Produto
-    file: produtos.json
-    fields:
-      - label: Produtos
-        name: items
-        widget: list
+    files:
+      - label: Lista de Produtos
+        name: produtos
+        file: produtos.json
         fields:
-          - { label: ID, name: id, widget: number }
-          - { label: Nome, name: nome, widget: string }
-          - label: Edição
-            name: edicao
-            widget: select
-            options:
-              - Rivais Predestinados
-              - Amigos de Jornada
-              - Heróis Excelsos
-              - Equilíbrio Perfeito
-              - Fogo Fantasmagórico
-              - Mega Evolução
-              - Coroa Estelar
-              - Evoluções Prismáticas
-              - Caos Ascendente
-              - "151"
-              - Celebrações
-              - Céus Em Evolução
-              - Origem Perdida
-              - Máscaras Do Crepúsculo
-              - Fenda Paradoxal
-              - Obsidiana Em Chamas
-          - label: Tipo
-            name: tipo
-            widget: select
-            options:
-              - Caixa de Booster
-              - Blister
-              - Kit
-              - Coleção Treinador
-          - { label: Preço (R$), name: preco, widget: number, value_type: float }
-          - { label: Unidades disponíveis, name: unidades, widget: number }
-          - { label: Foto do produto, name: imagem, widget: image, required: false }
+          - label: Produtos
+            name: root
+            widget: list
+            fields:
+              - { label: ID, name: id, widget: number }
+              - { label: Nome, name: nome, widget: string }
+              - label: Edição
+                name: edicao
+                widget: select
+                options:
+                  - Rivais Predestinados
+                  - Amigos de Jornada
+                  - Heróis Excelsos
+                  - Equilíbrio Perfeito
+                  - Fogo Fantasmagórico
+                  - Mega Evolução
+                  - Coroa Estelar
+                  - Evoluções Prismáticas
+                  - Caos Ascendente
+                  - "151"
+                  - Celebrações
+                  - Céus Em Evolução
+                  - Origem Perdida
+                  - Máscaras Do Crepúsculo
+                  - Fenda Paradoxal
+                  - Obsidiana Em Chamas
+              - label: Tipo
+                name: tipo
+                widget: select
+                options:
+                  - Caixa de Booster
+                  - Blister
+                  - Kit
+                  - Coleção Treinador
+              - { label: "Preço (R$)", name: preco, widget: number, value_type: float }
+              - { label: Unidades disponíveis, name: unidades, widget: number }
+              - { label: Foto do produto, name: imagem, widget: image, required: false }
 
   - name: cartas
     label: Cartas em Destaque
-    label_singular: Carta
-    file: cartas.json
-    fields:
-      - label: Cartas
-        name: items
-        widget: list
+    files:
+      - label: Lista de Cartas
+        name: cartas
+        file: cartas.json
         fields:
-          - { label: ID, name: id, widget: number }
-          - { label: Nome da Carta, name: nome, widget: string }
-          - { label: Edição, name: edicao, widget: string }
-          - { label: Número (ex. 006/165), name: numero, widget: string }
-          - { label: Preço (R$), name: preco, widget: number, value_type: float }
-          - { label: Foto da Carta, name: imagem, widget: image, required: false }
-          - { label: Descrição, name: descricao, widget: string }
+          - label: Cartas
+            name: root
+            widget: list
+            fields:
+              - { label: ID, name: id, widget: number }
+              - { label: Nome da Carta, name: nome, widget: string }
+              - { label: Edição, name: edicao, widget: string }
+              - { label: "Número (ex. 006/165)", name: numero, widget: string }
+              - { label: "Preço (R$)", name: preco, widget: number, value_type: float }
+              - { label: Foto da Carta, name: imagem, widget: image, required: false }
+              - { label: Descrição, name: descricao, widget: string }
