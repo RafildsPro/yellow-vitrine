@@ -26,7 +26,7 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
-  height: 68px;
+  height: 84px;
   display: flex;
   align-items: center;
   gap: 32px;
@@ -43,14 +43,13 @@ header {
 }
 
 .logo-img {
-  height: 48px;
-  width: 48px;
+  height: 72px;
+  width: 72px;
   object-fit: contain;
-  border-radius: 8px;
 }
 
 .logo span {
-  letter-spacing: -0.5px;
+  display: none;
 }
 
 nav {
