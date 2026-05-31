@@ -74,10 +74,9 @@
               fields: [{ label: 'Cartas', name: 'items', widget: 'list', fields: [
                 { label: 'Nome da Carta', name: 'nome', widget: 'string' },
                 { label: 'Edição', name: 'edicao', widget: 'string' },
-                { label: 'Número (ex. 006/165)', name: 'numero', widget: 'string' },
                 { label: 'Preço (R$)', name: 'preco', widget: 'number', value_type: 'float' },
                 { label: 'Foto da Carta', name: 'imagem', widget: 'image', required: false },
-                { label: 'Descrição', name: 'descricao', widget: 'string' }
+                { label: 'Condição', name: 'condicao', widget: 'select', options: ['M', 'NM', 'SP', 'MP', 'HP', 'D'] }
               ]}]
             }]
           }

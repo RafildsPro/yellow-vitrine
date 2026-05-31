@@ -261,6 +261,16 @@ nav a.active {
   width: fit-content;
 }
 
+.card-condicao {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: #fff;
+  background: #ffcb05;
+  border-radius: 6px;
+  padding: 2px 8px;
+  color: #2d2d2d;
+}
+
 .card-lingua {
   font-size: 0.7rem;
   font-weight: 800;

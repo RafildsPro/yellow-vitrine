@@ -25,10 +25,11 @@ async function carregarCartas() {
     card.innerHTML = `
       ${imgHtml}
       <div class="card-body">
-        <span class="card-edicao">${c.edicao}</span>
+        <div class="card-top">
+          <span class="card-edicao">${c.edicao}</span>
+          ${c.condicao ? `<span class="card-condicao">${c.condicao}</span>` : ''}
+        </div>
         <div class="card-nome">${c.nome}</div>
-        <div class="card-numero">${c.numero}</div>
-        <div class="card-descricao">${c.descricao}</div>
       </div>
       <div class="card-footer">
         <div>
