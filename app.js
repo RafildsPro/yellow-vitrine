@@ -121,7 +121,7 @@ function renderizar() {
   empty.style.display = 'none';
 
   // Modo Netflix: agrupa por categoria
-  const modoNetflix = filtroTipo === 'Todos' && filtroAtivo === 'Todos';
+  const modoNetflix = filtroTipo === 'Todos' && filtroAtivo === 'Todos' && !filtroBusca && ordemAtiva === 'padrao';
 
   if (modoNetflix) {
     CATEGORIAS.forEach(cat => {
@@ -140,11 +140,6 @@ function renderizar() {
       grid.appendChild(secao);
     });
   } else {
-    // Modo grid normal quando filtro ativo
-    grid.classList.add('grid-ativo');
-    filtrados.forEach(p => grid.appendChild(criarCard(p)));
-    grid.classList.remove('grid-ativo');
-    // Reaplica classe correta
     const wrapper = document.createElement('div');
     wrapper.className = 'grid-filtrado';
     filtrados.forEach(p => wrapper.appendChild(criarCard(p)));
