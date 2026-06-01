@@ -5,35 +5,40 @@
       "edicao": "Céus em Evolução",
       "lingua": "us",
       "preco": 8999,
-      "imagem": "imagens/1663956743_5211.jpg"
+      "imagem": "imagens/1663956743_5211.jpg",
+      "ultimo": true
     },
     {
       "nome": "(ING) Coleção Treinador Avançado - Espada e Escudo - Celebrações",
       "edicao": "Celebrações",
       "lingua": "us",
       "preco": 5899,
-      "imagem": "imagens/1750786580_9944.jpg"
+      "imagem": "imagens/1750786580_9944.jpg",
+      "ultimo": true
     },
     {
       "nome": "(ING) Coleção Treinador Avançado - Escarlate e Violeta - 151",
       "edicao": "151",
       "lingua": "us",
       "preco": 8999,
-      "imagem": "imagens/1696267228_8291.jpg"
+      "imagem": "imagens/1696267228_8291.jpg",
+      "ultimo": true
     },
     {
       "nome": "(PT-BR) Coleção Treinador Avançado - Escarlate e Violeta 7 - Coroa Estelar",
       "edicao": "Coroa Estelar",
       "lingua": "br",
       "preco": 699,
-      "imagem": "imagens/1719500176_9582.jpg"
+      "imagem": "imagens/1719500176_9582.jpg",
+      "ultimo": true
     },
     {
       "nome": "(PT-BR) Coleção Treinador Avançado - Escarlate e Violeta 10 - Rivais Predestinados",
       "edicao": "Rivais Predestinados",
       "lingua": "br",
       "preco": 1099,
-      "imagem": "imagens/1746651236_4667.jpg"
+      "imagem": "imagens/1746651236_4667.jpg",
+      "ultimo": true
     },
     {
       "nome": "(ING) Coleção Treinador Avançado - Escarlate e Violeta 10.5 - Fogo Branco",
