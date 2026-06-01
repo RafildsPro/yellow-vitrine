@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yellow Duck | Vitrine Pokémon</title>
+  <link rel="icon" href="imagens/logo.png" type="image/png" />
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
 </head>
@@ -48,6 +49,7 @@
 
     <section class="filtros">
       <div class="filtros-inner">
+        <input type="text" id="filtro-busca" placeholder="🔍 Buscar produto..." />
         <select id="filtro-tipo">
           <option value="Todos">Tipo de Produto</option>
           <option value="Caixa de Booster">Caixa de Booster</option>
@@ -62,6 +64,12 @@
         </select>
         <select id="filtro-select">
           <option value="Todos">Todas as Edições</option>
+        </select>
+        <select id="filtro-ordem">
+          <option value="padrao">Ordenar por</option>
+          <option value="menor">Menor Preço</option>
+          <option value="maior">Maior Preço</option>
+          <option value="az">A → Z</option>
         </select>
       </div>
     </section>

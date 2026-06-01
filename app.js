@@ -4,6 +4,8 @@ const empty = document.getElementById('empty');
 let todosProdutos = [];
 let filtroAtivo = 'Todos';
 let filtroTipo = 'Todos';
+let filtroBusca = '';
+let ordemAtiva = 'padrao';
 
 const COR_TIPO = {
   'Caixa de Booster':          '#e63946',
@@ -78,6 +80,7 @@ function criarCard(p) {
   const card = document.createElement('div');
   card.className = 'card';
   card.innerHTML = `
+    ${p.ultimo ? `<div class="badge-ultimo">🔥 Último!</div>` : ''}
     ${imgHtml}
     <div class="card-body">
       <div class="card-top">
@@ -94,14 +97,22 @@ function criarCard(p) {
   return card;
 }
 
+function ordenar(lista) {
+  if (ordemAtiva === 'menor') return [...lista].sort((a,b) => a.preco - b.preco);
+  if (ordemAtiva === 'maior') return [...lista].sort((a,b) => b.preco - a.preco);
+  if (ordemAtiva === 'az')    return [...lista].sort((a,b) => a.nome.localeCompare(b.nome));
+  return lista;
+}
+
 function renderizar() {
   grid.innerHTML = '';
 
-  const filtrados = todosProdutos.filter(p => {
+  const filtrados = ordenar(todosProdutos.filter(p => {
     const porTipo = filtroTipo === 'Todos' || p.tipo === filtroTipo;
     const porEdicao = filtroAtivo === 'Todos' || p.edicao === filtroAtivo;
-    return porTipo && porEdicao;
-  });
+    const porBusca = !filtroBusca || p.nome.toLowerCase().includes(filtroBusca.toLowerCase());
+    return porTipo && porEdicao && porBusca;
+  }));
 
   if (filtrados.length === 0) {
     empty.style.display = 'block';
@@ -143,6 +154,16 @@ function renderizar() {
 
 document.getElementById('filtro-select').addEventListener('change', (e) => {
   filtroAtivo = e.target.value;
+  renderizar();
+});
+
+document.getElementById('filtro-busca').addEventListener('input', (e) => {
+  filtroBusca = e.target.value;
+  renderizar();
+});
+
+document.getElementById('filtro-ordem').addEventListener('change', (e) => {
+  ordemAtiva = e.target.value;
   renderizar();
 });
 
