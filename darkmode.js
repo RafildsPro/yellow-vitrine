@@ -11,8 +11,9 @@ function aplicarTema(dark) {
   }
 }
 
-// Carrega preferência salva
-aplicarTema(localStorage.getItem('dark') === 'true');
+// Carrega preferência salva (padrão: dark)
+const salvo = localStorage.getItem('dark');
+aplicarTema(salvo === null ? true : salvo === 'true');
 
 btn.addEventListener('click', () => {
   const isDark = body.classList.toggle('dark');
