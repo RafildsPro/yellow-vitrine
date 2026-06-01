@@ -81,6 +81,7 @@ function criarCard(p) {
   card.className = 'card';
   card.innerHTML = `
     ${p.ultimo ? `<div class="badge-ultimo">🔥 Último!</div>` : ''}
+    ${p.novidade ? `<div class="badge-novidade">✨ Novidade!</div>` : ''}
     ${imgHtml}
     <div class="card-body">
       <div class="card-top">

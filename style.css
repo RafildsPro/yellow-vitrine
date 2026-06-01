@@ -71,20 +71,31 @@ body.dark .filtros-inner {
   background: transparent;
 }
 
-/* ── BADGE ÚLTIMO ── */
-.badge-ultimo {
+/* ── BADGES ── */
+.badge-ultimo, .badge-novidade {
   position: absolute;
   top: 10px;
   left: 10px;
-  background: #e63946;
   color: #fff;
   font-size: 0.72rem;
   font-weight: 900;
   padding: 3px 10px;
   border-radius: 20px;
   z-index: 2;
-  box-shadow: 0 2px 8px rgba(230,57,70,0.4);
   animation: pulse 1.5s infinite;
+}
+
+.badge-ultimo {
+  background: #e63946;
+  box-shadow: 0 2px 8px rgba(230,57,70,0.4);
+}
+
+.badge-novidade {
+  background: #2a9d8f;
+  box-shadow: 0 2px 8px rgba(42,157,143,0.4);
+  top: auto;
+  bottom: 10px;
+  left: 10px;
 }
 
 @keyframes pulse {
