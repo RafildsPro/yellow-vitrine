@@ -5,7 +5,8 @@
       "nome": "(PT-BR) Caixa de Booster - Espada e Escudo 11 - Origem Perdida",
       "edicao": "Origem Perdida",
       "lingua": "br",
-      "preco": 1250
+      "preco": 1250,
+      "ultimo": true
     },
     {
       "imagem": "imagens/1755639880_5851957.jpg",
@@ -19,7 +20,8 @@
       "edicao": "Fenda Paradoxal",
       "lingua": "br",
       "preco": 849,
-      "imagem": "imagens/1697726119_2620.jpg"
+      "imagem": "imagens/1697726119_2620.jpg",
+      "ultimo": true
     },
     {
       "imagem": "imagens/1768002176_9827741.jpg",
