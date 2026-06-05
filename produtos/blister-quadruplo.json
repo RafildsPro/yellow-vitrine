@@ -3,11 +3,56 @@
     {
       "ultimo": false,
       "novidade": false,
+      "nome": " (PT-BR) Blister Quádruplo Escarlate e Violeta 8.5 - Evoluções Prismáticas",
+      "edicao": "Evoluções Prismáticas",
+      "lingua": "br",
+      "preco": 52,
+      "imagem": "imagens/1736773854_6067.jpg"
+    },
+    {
+      "ultimo": false,
+      "novidade": false,
+      "nome": "(PT-BR) Blister Quádruplo Escarlate e Violeta 9 - Amigos de Jornada",
+      "edicao": "Amigos de Jornada",
+      "lingua": "br",
+      "preco": 48,
+      "imagem": "imagens/1741698314_4336.jpg"
+    },
+    {
+      "ultimo": false,
+      "novidade": false,
       "nome": "(PT-BR) Blister Quádruplo Escarlate e Violeta 10 - Rivais Predestinados",
       "edicao": "Rivais Predestinados",
       "lingua": "br",
       "preco": 60,
       "imagem": "imagens/1748372872_5117.jpg"
+    },
+    {
+      "ultimo": false,
+      "novidade": false,
+      "nome": "(PT-BR) Blister Quádruplo Megaevolução 1 - Megaevolução",
+      "edicao": "Megaevolução",
+      "lingua": "br",
+      "preco": 40,
+      "imagem": "imagens/1754664928_549.jpg"
+    },
+    {
+      "ultimo": false,
+      "novidade": false,
+      "nome": "(PT-BR) Blister Quádruplo Megaevolução 2 - Fogo Fantasmagórico",
+      "edicao": "Fogo Fantasmagórico",
+      "lingua": "br",
+      "preco": 40,
+      "imagem": "imagens/1760459508_4169.jpg"
+    },
+    {
+      "ultimo": false,
+      "novidade": false,
+      "nome": "(PT-BR) Blister Quádruplo Megaevolução 4 - Caos Ascendente",
+      "edicao": "Caos Ascendente",
+      "lingua": "br",
+      "preco": 40,
+      "imagem": "imagens/1776954200_7378.jpg"
     }
   ]
 }
