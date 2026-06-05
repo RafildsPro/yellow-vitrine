@@ -72,8 +72,12 @@ function compartilhar(nome) {
 
 function criarCard(p) {
   const msg = encodeURIComponent(`Olá! Tenho interesse no produto: ${p.nome} (R$ ${p.preco.toFixed(2).replace('.', ',')})`);
+  const precoFmt = p.preco.toFixed(2).replace('.', ',');
+  const imgClick = p.imagem
+    ? `onclick="abrirLightbox('${p.imagem}','${p.nome.replace(/'/g,"\\'")}','${precoFmt}','${p.edicao}','${p.lingua||''}','${cor}')" style="cursor:zoom-in"`
+    : '';
   const imgHtml = p.imagem
-    ? `<img class="card-img" src="${p.imagem}" alt="${p.nome}" onerror="this.outerHTML='<div class=\\'card-img-placeholder\\'>📦</div>'" />`
+    ? `<img class="card-img" src="${p.imagem}" alt="${p.nome}" ${imgClick} onerror="this.outerHTML='<div class=\\'card-img-placeholder\\'>📦</div>'" />`
     : `<div class="card-img-placeholder">📦</div>`;
   const cor = COR_TIPO[p.tipo] || '#0d1f3c';
 
