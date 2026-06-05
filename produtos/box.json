@@ -24,9 +24,10 @@
     {
       "nome": "(PT-BR) Box Coleção de Torneios Lílian",
       "lingua": "br",
-      "preco": 109,
+      "preco": 129,
       "imagem": "imagens/1745503208_6290.jpg",
-      "edicao": "Box"
+      "edicao": "Box",
+      "ultimo": true
     },
     {
       "nome": "(PT-BR) Box Coleção - Mega Lucario ex",
