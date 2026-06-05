@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yellow Duck | Cartas em Destaque</title>
+  <title>Yellow Duck TCG | Cartas em Destaque</title>
+  <meta name="description" content="Cartas Pokémon raras e especiais da Yellow Duck TCG. Charizard, Umbreon, Pikachu e muito mais. Entre em contato para negociar!" />
+  <meta property="og:title" content="Yellow Duck TCG | Cartas em Destaque" />
+  <meta property="og:description" content="Cartas Pokémon raras e especiais selecionadas a dedo." />
+  <meta property="og:image" content="imagens/logo.png" />
   <link rel="icon" href="imagens/logo.png" type="image/png" />
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
@@ -46,6 +50,12 @@
       </div>
     </section>
 
+    <section class="filtros">
+      <div class="filtros-inner">
+        <input type="text" id="busca-cartas" placeholder="🔍 Buscar carta..." />
+      </div>
+    </section>
+
     <section class="grid-produtos grid-cartas" id="grid-cartas"></section>
 
     <div class="empty-state" id="empty-cartas" style="display:none;">
@@ -58,6 +68,7 @@
     <a href="https://wa.me/5531984622230" target="_blank">📲 (31) 98462-2230</a>
   </footer>
 
+  <script src="lightbox.js"></script>
   <script src="cartas.js"></script>
   <script src="darkmode.js"></script>
 </body>

@@ -431,6 +431,14 @@ nav a.active {
   border-radius: 20px;
 }
 
+.sobre-btn.pix-copiar {
+  background: #0d1f3c;
+  color: #ffcb05;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+}
+
 /* ── LIGHTBOX ── */
 #lightbox {
   display: none;

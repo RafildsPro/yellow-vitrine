@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yellow Duck TCG | Sobre</title>
+  <title>Yellow Duck TCG | Sobre e Contato</title>
+  <meta name="description" content="Conheça a Yellow Duck TCG. Loja especializada em produtos Pokémon originais e lacrados. Fale conosco pelo WhatsApp ou Instagram @yellowducktcg." />
+  <meta property="og:title" content="Yellow Duck TCG | Sobre e Contato" />
+  <meta property="og:description" content="Loja especializada em produtos Pokémon originais e lacrados." />
+  <meta property="og:image" content="imagens/logo.png" />
   <link rel="icon" href="imagens/logo.png" type="image/png" />
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
@@ -74,6 +78,15 @@
         <div class="sobre-pix">
           <span>⚡ Pix</span>
         </div>
+        <button class="sobre-btn pix-copiar" onclick="copiarPix()">📋 Copiar chave Pix</button>
+        <span id="pix-copiado" style="display:none;font-size:0.8rem;color:#2a9d8f;font-weight:700;">✅ Copiado!</span>
+        <script>
+          function copiarPix() {
+            navigator.clipboard.writeText('rafaelgsaab@gmail.com');
+            document.getElementById('pix-copiado').style.display = 'inline';
+            setTimeout(() => document.getElementById('pix-copiado').style.display = 'none', 2000);
+          }
+        </script>
       </div>
 
       <div class="sobre-card">
