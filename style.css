@@ -616,7 +616,7 @@ nav a.active {
   gap: 12px;
 }
 
-#filtro-busca {
+#filtro-busca, #busca-cartas {
   appearance: none;
   background: #ffcb05;
   border: 3px solid #ffcb05;
@@ -633,23 +633,23 @@ nav a.active {
   outline: none;
 }
 
-#filtro-busca::placeholder {
+#filtro-busca::placeholder, #busca-cartas::placeholder {
   color: #7a6200;
   font-weight: 700;
 }
 
-#filtro-busca:focus {
+#filtro-busca:focus, #busca-cartas:focus {
   box-shadow: 0 6px 16px rgba(255,203,5,0.5);
   transform: translateY(-1px);
 }
 
-body.dark #filtro-busca {
+body.dark #filtro-busca, body.dark #busca-cartas {
   background: #1e2130;
   border-color: #ffcb05;
   color: #f0f0f0;
 }
 
-body.dark #filtro-busca::placeholder { color: #888; }
+body.dark #filtro-busca::placeholder, body.dark #busca-cartas::placeholder { color: #888; }
 
 #filtro-tipo, #filtro-select, #filtro-ordem {
   appearance: none;
