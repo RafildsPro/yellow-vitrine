@@ -72,7 +72,7 @@ body.dark .filtros-inner {
 }
 
 /* ── BADGES ── */
-.badge-ultimo, .badge-novidade {
+.badge-ultimo, .badge-novidade, .badge-prevenda {
   position: absolute;
   top: 10px;
   left: 10px;
