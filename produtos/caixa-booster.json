@@ -1,12 +1,42 @@
 {
   "items": [
     {
+      "ultimo": false,
+      "novidade": false,
+      "prevenda": true,
+      "nome": "(PT-BR) Caixa de Booster - Sol e Lua 1",
+      "edicao": "Sol e Lua",
+      "lingua": "br",
+      "preco": 1999,
+      "imagem": "imagens/1587133780_448.jpg"
+    },
+    {
+      "ultimo": false,
+      "novidade": false,
+      "prevenda": true,
+      "nome": "(PT-BR) Caixa de Booster - Espada e Escudo 10 - Estrelas Radiantes",
+      "edicao": "Estrelas Radiantes",
+      "lingua": "br",
+      "preco": 999,
+      "imagem": "imagens/1653663186_3754.jpg"
+    },
+    {
       "imagem": "imagens/1766327163_6864478.jpg",
       "nome": "(PT-BR) Caixa de Booster - Espada e Escudo 11 - Origem Perdida",
       "edicao": "Origem Perdida",
       "lingua": "br",
       "preco": 1250,
       "ultimo": true
+    },
+    {
+      "ultimo": false,
+      "novidade": false,
+      "prevenda": true,
+      "nome": "(PT-BR) Caixa de Booster - Escarlate e Violeta 3 - Obsidiana em Chamas",
+      "edicao": "Obsidiana em Chamas",
+      "lingua": "br",
+      "preco": 690,
+      "imagem": "imagens/1729859081_2650.jpg"
     },
     {
       "nome": "(PT-BR) Caixa de Booster - Escarlate e Violeta 4 - Fenda Paradoxal",
@@ -77,7 +107,8 @@
       "edicao": "Gem Pack",
       "lingua": "cn",
       "preco": 649,
-      "imagem": "imagens/1756995701_3375.jpg"
+      "imagem": "imagens/1756995701_3375.jpg",
+      "prevenda": false
     }
   ]
 }
