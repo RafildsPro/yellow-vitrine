@@ -93,9 +93,9 @@ body.dark .filtros-inner {
 .badge-novidade {
   background: #2a9d8f;
   box-shadow: 0 2px 8px rgba(42,157,143,0.4);
-  top: auto;
-  bottom: 10px;
-  left: 10px;
+  top: 10px;
+  left: auto;
+  right: 10px;
 }
 
 .badge-prevenda {
