@@ -32,6 +32,14 @@ const CATEGORIAS = [
 ];
 
 async function carregarProdutos() {
+  // Carrega ordem personalizada
+  let ordemTipos = CATEGORIAS.map(c => c.tipo);
+  try {
+    const ro = await fetch('ordem.json');
+    const od = await ro.json();
+    if (od.categorias && od.categorias.length) ordemTipos = od.categorias;
+  } catch {}
+
   const resultados = await Promise.all(
     CATEGORIAS.map(async cat => {
       try {
@@ -43,6 +51,14 @@ async function carregarProdutos() {
     })
   );
   todosProdutos = resultados.flat();
+
+  // Reordena CATEGORIAS conforme ordem.json
+  CATEGORIAS.sort((a, b) => {
+    const ia = ordemTipos.indexOf(a.tipo);
+    const ib = ordemTipos.indexOf(b.tipo);
+    return (ia === -1 ? 999 : ia) - (ib === -1 ? 999 : ib);
+  });
+
   popularFiltro();
   renderizar();
 }

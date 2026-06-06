@@ -75,6 +75,21 @@
             }]
           },
           {
+            name: 'ordem', label: '↕️ Ordem das Categorias',
+            files: [{ label: 'Ordem das Categorias', name: 'ordem', file: 'ordem.json',
+              fields: [{
+                label: 'Categorias (arraste para reordenar)',
+                name: 'categorias',
+                widget: 'list',
+                field: { label: 'Categoria', name: 'item', widget: 'select', options: [
+                  'Caixa de Booster','Blister Triplo','Blister Quádruplo',
+                  'Coleção Treinador Avançado','Box','Single',
+                  'Combo de Pacotes','Mini Tin','Outros'
+                ]}
+              }]
+            }]
+          },
+          {
             name: 'cartas', label: 'Cartas em Destaque',
             files: [{ label: 'Lista de Cartas', name: 'cartas', file: 'cartas.json',
               fields: [{ label: 'Cartas', name: 'items', widget: 'list', fields: [
