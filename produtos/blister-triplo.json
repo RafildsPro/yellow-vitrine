@@ -1,6 +1,16 @@
 {
   "items": [
     {
+      "ultimo": false,
+      "novidade": true,
+      "prevenda": false,
+      "nome": "(PT-BR) Blister Triplo Espada e Escudo 13 - Realeza Absoluta",
+      "edicao": "Realeza Absoluta",
+      "lingua": "br",
+      "preco": 199,
+      "imagem": "imagens/1672258063_4667.jpg"
+    },
+    {
       "nome": "(PT-BR) Blister Triplo Escarlate e Violeta 7 - Coroa Estelar",
       "edicao": "Coroa Estelar",
       "lingua": "br",
@@ -42,7 +52,8 @@
       "edicao": "Caos Ascendente",
       "lingua": "br",
       "preco": 30,
-      "imagem": "imagens/1776954320_5698.jpg"
+      "imagem": "imagens/1776954320_5698.jpg",
+      "novidade": false
     }
   ]
 }
