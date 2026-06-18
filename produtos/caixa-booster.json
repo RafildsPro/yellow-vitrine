@@ -2,8 +2,8 @@
   "items": [
     {
       "ultimo": false,
-      "novidade": false,
-      "prevenda": true,
+      "novidade": true,
+      "prevenda": false,
       "nome": "(PT-BR) Caixa de Booster - Sol e Lua 1",
       "edicao": "Sol e Lua",
       "lingua": "br",
@@ -12,8 +12,8 @@
     },
     {
       "ultimo": false,
-      "novidade": false,
-      "prevenda": true,
+      "novidade": true,
+      "prevenda": false,
       "nome": "(PT-BR) Caixa de Booster - Espada e Escudo 10 - Estrelas Radiantes",
       "edicao": "Estrelas Radiantes",
       "lingua": "br",
@@ -29,9 +29,9 @@
       "ultimo": true
     },
     {
-      "ultimo": false,
+      "ultimo": true,
       "novidade": false,
-      "prevenda": true,
+      "prevenda": false,
       "nome": "(PT-BR) Caixa de Booster - Escarlate e Violeta 3 - Obsidiana em Chamas",
       "edicao": "Obsidiana em Chamas",
       "lingua": "br",
