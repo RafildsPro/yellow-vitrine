@@ -514,6 +514,7 @@ nav a.active {
 .lb-close:hover { background: rgba(0,0,0,0.8); }
 
 .lb-img-wrap {
+  position: relative;
   width: 100%;
   max-height: 340px;
   overflow: hidden;
@@ -526,6 +527,93 @@ nav a.active {
   object-fit: contain;
   display: block;
 }
+
+.lb-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  transition: background 0.2s;
+}
+.lb-nav:hover { background: rgba(0,0,0,0.85); }
+.lb-prev { left: 10px; }
+.lb-next { right: 10px; }
+.lb-nav[hidden] { display: none; }
+
+.lb-img-dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 0 0;
+  background: #111;
+}
+.lb-img-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.3);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.lb-img-dot.active { background: #fff; }
+
+/* ── CARROSSEL NO CARD ── */
+.card-carousel {
+  position: relative;
+  overflow: hidden;
+}
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+  z-index: 2;
+  line-height: 1;
+}
+.card:hover .carousel-btn { opacity: 1; }
+.carousel-prev { left: 6px; }
+.carousel-next { right: 6px; }
+.carousel-dots {
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 4px;
+  z-index: 2;
+}
+.carousel-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.45);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.carousel-dot.active { background: #fff; }
 
 .lb-info {
   padding: 20px;

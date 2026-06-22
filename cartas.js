@@ -26,11 +26,8 @@ function renderizarCartas(busca = '') {
   filtradas.forEach(c => {
     const precoFmt = c.preco.toFixed(2).replace('.', ',');
     const msg = encodeURIComponent(`Olá! Tenho interesse na carta: ${c.nome} (R$ ${precoFmt})`);
-    const imgClick = c.imagem
-      ? `onclick="abrirLightbox('${c.imagem}','${c.nome.replace(/'/g,"\\'")}','${precoFmt}','${c.edicao}','${c.lingua||''}','#0d1f3c')" style="cursor:zoom-in"`
-      : '';
     const imgHtml = c.imagem
-      ? `<img class="card-img" src="${c.imagem}" alt="${c.nome}" ${imgClick} onerror="this.outerHTML='<div class=\\'card-img-placeholder\\'>🃏</div>'" />`
+      ? `<img class="card-img" src="${c.imagem}" alt="${c.nome}" style="cursor:zoom-in" onerror="this.outerHTML='<div class=\\'card-img-placeholder\\'>🃏</div>'" />`
       : `<div class="card-img-placeholder">🃏</div>`;
 
     const card = document.createElement('div');
@@ -52,6 +49,11 @@ function renderizarCartas(busca = '') {
         <a class="card-wpp" href="${WPP}?text=${msg}" target="_blank">💬 Quero</a>
       </div>
     `;
+    if (c.imagem) {
+      card.querySelector('.card-img').addEventListener('click', () => {
+        abrirLightbox([c.imagem], 0, c.nome, precoFmt, c.edicao, c.lingua || '', '#0d1f3c');
+      });
+    }
     grid.appendChild(card);
   });
 }

@@ -90,12 +90,26 @@ function criarCard(p) {
   const cor = COR_TIPO[p.tipo] || '#0d1f3c';
   const precoFmt = p.preco.toFixed(2).replace('.', ',');
   const msg = encodeURIComponent(`Olá! Tenho interesse no produto: ${p.nome} (R$ ${precoFmt})`);
-  const imgClick = p.imagem
-    ? `onclick="abrirLightbox('${p.imagem}','${p.nome.replace(/'/g,"\\'")}','${precoFmt}','${p.edicao}','${p.lingua||''}','${cor}')" style="cursor:zoom-in"`
-    : '';
-  const imgHtml = p.imagem
-    ? `<img class="card-img" src="${p.imagem}" alt="${p.nome}" ${imgClick} onerror="this.outerHTML='<div class=\\'card-img-placeholder\\'>📦</div>'" />`
-    : `<div class="card-img-placeholder">📦</div>`;
+
+  // Suporte a múltiplas imagens (imagens[]) e imagem única (imagem)
+  const imgs = (p.imagens && p.imagens.length > 0) ? p.imagens : (p.imagem ? [p.imagem] : []);
+
+  let imgHtml;
+  if (imgs.length === 0) {
+    imgHtml = `<div class="card-img-placeholder">📦</div>`;
+  } else if (imgs.length === 1) {
+    imgHtml = `<img class="card-img" src="${imgs[0]}" alt="${p.nome}" style="cursor:zoom-in" onerror="this.outerHTML='<div class=\\'card-img-placeholder\\'>📦</div>'" />`;
+  } else {
+    imgHtml = `
+      <div class="card-carousel">
+        <img class="card-img" src="${imgs[0]}" alt="${p.nome}" style="cursor:zoom-in" />
+        <button class="carousel-btn carousel-prev" type="button">‹</button>
+        <button class="carousel-btn carousel-next" type="button">›</button>
+        <div class="carousel-dots">
+          ${imgs.map((_, i) => `<span class="carousel-dot${i === 0 ? ' active' : ''}"></span>`).join('')}
+        </div>
+      </div>`;
+  }
 
   const card = document.createElement('div');
   card.className = 'card';
@@ -116,6 +130,30 @@ function criarCard(p) {
       <a class="card-wpp" href="${WPP}?text=${msg}" target="_blank">💬 Quero</a>
     </div>
   `;
+
+  // Listeners de imagem e carrossel
+  if (imgs.length >= 1) {
+    const imgEl = card.querySelector('.card-img');
+    let idx = 0;
+
+    if (imgs.length === 1) {
+      imgEl.addEventListener('click', () => abrirLightbox(imgs, 0, p.nome, precoFmt, p.edicao, p.lingua || '', cor));
+    } else {
+      const dots = card.querySelectorAll('.carousel-dot');
+
+      function mostrarImg(novoIdx) {
+        idx = (novoIdx + imgs.length) % imgs.length;
+        imgEl.src = imgs[idx];
+        dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+      }
+
+      imgEl.addEventListener('click', () => abrirLightbox(imgs, idx, p.nome, precoFmt, p.edicao, p.lingua || '', cor));
+      card.querySelector('.carousel-prev').addEventListener('click', (e) => { e.stopPropagation(); mostrarImg(idx - 1); });
+      card.querySelector('.carousel-next').addEventListener('click', (e) => { e.stopPropagation(); mostrarImg(idx + 1); });
+      dots.forEach((dot, i) => dot.addEventListener('click', (e) => { e.stopPropagation(); mostrarImg(i); }));
+    }
+  }
+
   return card;
 }
 
