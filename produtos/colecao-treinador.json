@@ -33,14 +33,6 @@
       "ultimo": true
     },
     {
-      "nome": "(PT-BR) Coleção Treinador Avançado - Escarlate e Violeta 10 - Rivais Predestinados",
-      "edicao": "Rivais Predestinados",
-      "lingua": "br",
-      "preco": 1099,
-      "imagem": "imagens/1746651236_4667.jpg",
-      "ultimo": true
-    },
-    {
       "nome": "(ING) Coleção Treinador Avançado - Escarlate e Violeta 10.5 - Fogo Branco",
       "edicao": "Fogo Branco",
       "lingua": "us",
@@ -58,7 +50,7 @@
       "nome": "(ING) Coleção Treinador Avançado - Megaevolução 2 - Fogo Fantasmagórico",
       "edicao": "Fogo Fantasmagórico",
       "lingua": "us",
-      "preco": 899,
+      "preco": 999,
       "imagem": "imagens/1760463089_3355.jpg"
     },
     {
