@@ -16,6 +16,16 @@
       "lingua": "br",
       "preco": 18,
       "imagem": "imagens/sleeve.jpg"
+    },
+    {
+      "ultimo": false,
+      "novidade": true,
+      "prevenda": false,
+      "nome": "Pasta BRA \"Sabores\" 3x3 Capacidade: 360 Cards",
+      "edicao": "Acessórios",
+      "lingua": "br",
+      "preco": 119,
+      "imagem": "imagens/preto.jpg"
     }
   ]
 }
