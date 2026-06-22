@@ -6,6 +6,16 @@
       "lingua": "br",
       "preco": 12,
       "imagem": "imagens/1777398342_4216.jpg"
+    },
+    {
+      "ultimo": false,
+      "novidade": true,
+      "prevenda": false,
+      "nome": "Sleeve basico TCG 63x88mm c100un BRA",
+      "edicao": "Acessórios",
+      "lingua": "br",
+      "preco": 18,
+      "imagem": "imagens/sleeve.jpg"
     }
   ]
 }
