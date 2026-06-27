@@ -1,6 +1,16 @@
 {
   "items": [
     {
+      "ultimo": false,
+      "novidade": false,
+      "prevenda": false,
+      "nome": "(PT-BR) Blister Unitário - Escarlate e Violeta 9 - Amigos de Jornada",
+      "edicao": "Amigos De Jornada",
+      "lingua": "br",
+      "preco": 14,
+      "imagem": "imagens/1741698451_3788.jpg"
+    },
+    {
       "nome": "(PT-BR) Blister Unitário - Megaevolução 1 - Megaevolução",
       "edicao": "Megaevolução",
       "lingua": "br",
