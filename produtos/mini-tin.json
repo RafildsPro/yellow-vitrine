@@ -20,6 +20,16 @@
       "lingua": "us",
       "preco": 99,
       "imagem": "imagens/download-1-.jpg"
+    },
+    {
+      "ultimo": false,
+      "novidade": false,
+      "prevenda": false,
+      "nome": "(ING) Mini Lata - Lumiose",
+      "edicao": "Equilíbrio Perfeito",
+      "lingua": "us",
+      "preco": 99,
+      "imagem": "imagens/1781029991_2302.jpg"
     }
   ]
 }
