@@ -47,6 +47,16 @@
       "preco": 36,
       "imagem": "imagens/1776954320_5698.jpg",
       "novidade": false
+    },
+    {
+      "ultimo": false,
+      "novidade": false,
+      "prevenda": true,
+      "nome": "(PT-BR) Blister Triplo Megaevolução 5 - Escuridão Absoluta",
+      "edicao": "Escuridão Absoluta",
+      "lingua": "br",
+      "preco": 38,
+      "imagem": "imagens/1781893923_6039.jpg"
     }
   ]
 }
