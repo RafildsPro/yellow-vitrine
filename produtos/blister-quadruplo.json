@@ -53,6 +53,16 @@
       "lingua": "br",
       "preco": 48,
       "imagem": "imagens/1776954200_7378.jpg"
+    },
+    {
+      "ultimo": false,
+      "novidade": false,
+      "prevenda": true,
+      "nome": "(PT-BR) Blister Quádruplo Megaevolução 5 - Escuridão Absoluta",
+      "edicao": "Escuridão Absoluta",
+      "lingua": "br",
+      "preco": 48,
+      "imagem": "imagens/1781893820_1232.jpg"
     }
   ]
 }
