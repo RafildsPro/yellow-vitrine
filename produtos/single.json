@@ -3,12 +3,57 @@
     {
       "ultimo": false,
       "novidade": false,
-      "prevenda": false,
-      "nome": "(PT-BR) Blister Unitário - Escarlate e Violeta 8 - Fagulhas Impetuosas",
-      "edicao": "Fagulhas Impetuosas",
+      "prevenda": true,
+      "nome": "(PT-BR) Blister Unitário - Megaevolução 5 - Escuridão Absoluta",
+      "edicao": "Escuridão Absoluta",
       "lingua": "br",
-      "preco": 28,
-      "imagem": "imagens/1728928410_8838.jpg"
+      "preco": 12,
+      "imagem": "imagens/1781893590_3700.jpg"
+    },
+    {
+      "nome": "(PT-BR) Blister Unitário - Megaevolução 4 - Caos Ascendente",
+      "edicao": "Caos Ascendente",
+      "lingua": "br",
+      "preco": 12,
+      "imagem": "imagens/1776954013_3963.jpg",
+      "prevenda": false
+    },
+    {
+      "ultimo": false,
+      "novidade": false,
+      "prevenda": false,
+      "nome": "(PT-BR) Blister Unitário - Megaevolução 3 - Equilíbrio Perfeito",
+      "edicao": "Equilíbrio Perfeito",
+      "lingua": "br",
+      "preco": 12,
+      "imagem": "imagens/1772131175_7153.jpg"
+    },
+    {
+      "ultimo": false,
+      "novidade": false,
+      "prevenda": false,
+      "nome": "(PT-BR) Blister Unitário - Megaevolução 2 - Fogo Fantasmagórico",
+      "edicao": "Fogo Fantasmagórico",
+      "lingua": "br",
+      "preco": 14,
+      "imagem": "imagens/1760453225_3782-1-.jpg"
+    },
+    {
+      "nome": "(PT-BR) Blister Unitário - Megaevolução 1 - Megaevolução",
+      "edicao": "Megaevolução",
+      "lingua": "br",
+      "preco": 12,
+      "imagem": "imagens/1754664882_1393.jpg"
+    },
+    {
+      "ultimo": false,
+      "novidade": false,
+      "prevenda": false,
+      "nome": "(PT-BR) Blister Unitário - Escarlate e Violeta 10 - Rivais Predestinados",
+      "edicao": "Rivais Predestinados",
+      "lingua": "br",
+      "preco": 25,
+      "imagem": "imagens/1746651728_9997.jpg"
     },
     {
       "ultimo": false,
@@ -24,55 +69,11 @@
       "ultimo": false,
       "novidade": false,
       "prevenda": false,
-      "nome": "(PT-BR) Blister Unitário - Escarlate e Violeta 10 - Rivais Predestinados",
-      "edicao": "Rivais Predestinados",
+      "nome": "(PT-BR) Blister Unitário - Escarlate e Violeta 8 - Fagulhas Impetuosas",
+      "edicao": "Fagulhas Impetuosas",
       "lingua": "br",
-      "preco": 25,
-      "imagem": "imagens/1746651728_9997.jpg"
-    },
-    {
-      "nome": "(PT-BR) Blister Unitário - Megaevolução 1 - Megaevolução",
-      "edicao": "Megaevolução",
-      "lingua": "br",
-      "preco": 12,
-      "imagem": "imagens/1754664882_1393.jpg"
-    },
-    {
-      "ultimo": false,
-      "novidade": false,
-      "prevenda": false,
-      "nome": "(PT-BR) Blister Unitário - Megaevolução 2 - Fogo Fantasmagórico",
-      "edicao": "Fogo Fantasmagórico",
-      "lingua": "br",
-      "preco": 14,
-      "imagem": "imagens/1760453225_3782-1-.jpg"
-    },
-    {
-      "ultimo": false,
-      "novidade": false,
-      "prevenda": false,
-      "nome": "(PT-BR) Blister Unitário - Megaevolução 3 - Equilíbrio Perfeito",
-      "edicao": "Equilíbrio Perfeito",
-      "lingua": "br",
-      "preco": 12,
-      "imagem": "imagens/1772131175_7153.jpg"
-    },
-    {
-      "nome": "(PT-BR) Blister Unitário - Megaevolução 4 - Caos Ascendente",
-      "edicao": "Caos Ascendente",
-      "lingua": "br",
-      "preco": 12,
-      "imagem": "imagens/1776954013_3963.jpg"
-    },
-    {
-      "ultimo": false,
-      "novidade": false,
-      "prevenda": true,
-      "nome": "(PT-BR) Blister Unitário - Megaevolução 5 - Escuridão Absoluta",
-      "edicao": "Escuridão Absoluta",
-      "lingua": "br",
-      "preco": 12,
-      "imagem": "imagens/1781893590_3700.jpg"
+      "preco": 28,
+      "imagem": "imagens/1728928410_8838.jpg"
     }
   ]
 }
