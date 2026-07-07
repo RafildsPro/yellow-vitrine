@@ -34,6 +34,20 @@
       "novidade": true,
       "nome": "Pasta BRA \"Sabores\" 3x3 Capacidade: 360 Cards",
       "prevenda": false
+    },
+    {
+      "ultimo": false,
+      "novidade": false,
+      "prevenda": false,
+      "nome": "Pasta Com Zíper 3x3 Capacidade:360 Cards",
+      "edicao": "Outros",
+      "lingua": "br",
+      "preco": 249,
+      "imagens": [
+        "imagens/pasta-1.jpg",
+        "imagens/pasta-2.jpg",
+        "imagens/pasta-3.jpg"
+      ]
     }
   ]
 }
