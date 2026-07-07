@@ -49,6 +49,26 @@
       "lingua": "us",
       "preco": 449,
       "imagem": "imagens/1776084034_6787.jpg"
+    },
+    {
+      "ultimo": false,
+      "novidade": false,
+      "prevenda": true,
+      "nome": "(PT-BR) Coleção Treinador Avançado - Megaevolução 5 - Escuridão Absoluta",
+      "edicao": "Escuridão Absoluta",
+      "lingua": "br",
+      "preco": 349,
+      "imagem": "imagens/1781892577_7015.jpg"
+    },
+    {
+      "ultimo": false,
+      "novidade": false,
+      "prevenda": true,
+      "nome": "(ING) Coleção Treinador Avançado - Megaevolução 5 - Escuridão Absoluta",
+      "edicao": "Escuridão Absoluta",
+      "lingua": "us",
+      "preco": 399,
+      "imagem": "imagens/1781783942_5726.jpg"
     }
   ]
 }
