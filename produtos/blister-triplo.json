@@ -1,37 +1,12 @@
 {
   "items": [
     {
-      "ultimo": false,
-      "novidade": true,
-      "prevenda": false,
-      "nome": "(PT-BR) Blister Triplo Espada e Escudo 13 - Realeza Absoluta",
-      "edicao": "Realeza Absoluta",
-      "lingua": "br",
-      "preco": 199,
-      "imagem": "imagens/1672258063_4667.jpg"
-    },
-    {
-      "nome": "(PT-BR) Blister Triplo Escarlate e Violeta 8.5 - Evoluções Prismáticas",
-      "edicao": "Evoluções Prismáticas",
-      "lingua": "br",
-      "preco": 40,
-      "imagem": "imagens/1738164597_5550.jpg"
-    },
-    {
-      "nome": "(PT-BR) Blister Triplo Escarlate e Violeta 9 - Amigos de Jornada",
-      "edicao": "Amigos de Jornada",
+      "nome": "(PT-BR) Blister Triplo Megaevolução 4 - Caos Ascendente",
+      "edicao": "Caos Ascendente",
       "lingua": "br",
       "preco": 36,
-      "imagem": "imagens/1741698398_7900.jpg"
-    },
-    {
-      "ultimo": false,
-      "novidade": false,
-      "nome": "(PT-BR) Blister Triplo Escarlate e Violeta 10 - Rivais Predestinados",
-      "edicao": "Rivais Predestinados",
-      "lingua": "br",
-      "preco": 45,
-      "imagem": "imagens/1748365855_2255-1-.jpg"
+      "imagem": "imagens/1776954320_5698.jpg",
+      "novidade": false
     },
     {
       "nome": "(PT-BR) Blister Triplo Megaevolução 2 - Fogo Fantasmagórico ",
@@ -39,14 +14,6 @@
       "lingua": "br",
       "preco": 36,
       "imagem": "imagens/1760459065_2612.jpg"
-    },
-    {
-      "nome": "(PT-BR) Blister Triplo Megaevolução 4 - Caos Ascendente",
-      "edicao": "Caos Ascendente",
-      "lingua": "br",
-      "preco": 36,
-      "imagem": "imagens/1776954320_5698.jpg",
-      "novidade": false
     },
     {
       "ultimo": false,
@@ -57,6 +24,42 @@
       "lingua": "br",
       "preco": 38,
       "imagem": "imagens/1781893923_6039.jpg"
+    },
+    {
+      "ultimo": false,
+      "novidade": false,
+      "nome": "(PT-BR) Blister Triplo Escarlate e Violeta 10 - Rivais Predestinados",
+      "edicao": "Rivais Predestinados",
+      "lingua": "br",
+      "preco": 45,
+      "imagem": "imagens/1748365855_2255-1-.jpg",
+      "prevenda": false
+    },
+    {
+      "nome": "(PT-BR) Blister Triplo Escarlate e Violeta 9 - Amigos de Jornada",
+      "edicao": "Amigos de Jornada",
+      "lingua": "br",
+      "preco": 36,
+      "imagem": "imagens/1741698398_7900.jpg",
+      "prevenda": false
+    },
+    {
+      "nome": "(PT-BR) Blister Triplo Escarlate e Violeta 8.5 - Evoluções Prismáticas",
+      "edicao": "Evoluções Prismáticas",
+      "lingua": "br",
+      "preco": 40,
+      "imagem": "imagens/1738164597_5550.jpg",
+      "prevenda": false
+    },
+    {
+      "ultimo": false,
+      "novidade": true,
+      "prevenda": false,
+      "nome": "(PT-BR) Blister Triplo Espada e Escudo 13 - Realeza Absoluta",
+      "edicao": "Realeza Absoluta",
+      "lingua": "br",
+      "preco": 199,
+      "imagem": "imagens/1672258063_4667.jpg"
     }
   ]
 }
