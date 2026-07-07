@@ -63,6 +63,16 @@
       "lingua": "br",
       "preco": 12,
       "imagem": "imagens/1776954013_3963.jpg"
+    },
+    {
+      "ultimo": false,
+      "novidade": false,
+      "prevenda": true,
+      "nome": "(PT-BR) Blister Unitário - Megaevolução 5 - Escuridão Absoluta",
+      "edicao": "Escuridão Absoluta",
+      "lingua": "br",
+      "preco": 12,
+      "imagem": "imagens/1781893590_3700.jpg"
     }
   ]
 }
