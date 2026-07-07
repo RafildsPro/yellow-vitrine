@@ -2,101 +2,6 @@
   "items": [
     {
       "ultimo": false,
-      "novidade": true,
-      "prevenda": false,
-      "nome": "(PT-BR) Caixa de Booster - Sol e Lua 1",
-      "edicao": "Sol e Lua",
-      "lingua": "br",
-      "preco": 1999,
-      "imagem": "imagens/1587133780_448.jpg"
-    },
-    {
-      "ultimo": false,
-      "novidade": true,
-      "prevenda": false,
-      "nome": "(PT-BR) Caixa de Booster - Espada e Escudo 10 - Estrelas Radiantes",
-      "edicao": "Estrelas Radiantes",
-      "lingua": "br",
-      "preco": 999,
-      "imagem": "imagens/1653663186_3754.jpg"
-    },
-    {
-      "imagem": "imagens/1766327163_6864478.jpg",
-      "nome": "(PT-BR) Caixa de Booster - Espada e Escudo 11 - Origem Perdida",
-      "edicao": "Origem Perdida",
-      "lingua": "br",
-      "preco": 1250,
-      "ultimo": true
-    },
-    {
-      "ultimo": true,
-      "novidade": false,
-      "prevenda": false,
-      "nome": "(PT-BR) Caixa de Booster - Escarlate e Violeta 3 - Obsidiana em Chamas",
-      "edicao": "Obsidiana em Chamas",
-      "lingua": "br",
-      "preco": 899,
-      "imagem": "imagens/1729859081_2650.jpg"
-    },
-    {
-      "nome": "(PT-BR) Caixa de Booster - Escarlate e Violeta 4 - Fenda Paradoxal",
-      "edicao": "Fenda Paradoxal",
-      "lingua": "br",
-      "preco": 849,
-      "imagem": "imagens/1697726119_2620.jpg",
-      "ultimo": true
-    },
-    {
-      "imagem": "imagens/1768002176_9827741.jpg",
-      "nome": "(PT-BR) Caixa de Booster - Escarlate e Violeta 6 - Máscaras do Crepúsculo",
-      "edicao": "Máscaras Do Crepúsculo",
-      "lingua": "br",
-      "preco": 899
-    },
-    {
-      "imagem": "imagens/1743869919_5001887.jpg",
-      "nome": "(PT-BR) Caixa de Booster - Escarlate e Violeta 9 - Amigos de Jornada",
-      "edicao": "Amigos de Jornada",
-      "lingua": "br",
-      "preco": 379
-    },
-    {
-      "nome": "(PT-BR) Caixa de Booster - Escarlate e Violeta 10 - Rivais Predestinados",
-      "edicao": "Rivais Predestinados",
-      "lingua": "br",
-      "preco": 899,
-      "imagem": "imagens/1746651503_2905.jpg"
-    },
-    {
-      "nome": "(PT-BR) Caixa de Booster - Megaevolução 1 - Megaevolução",
-      "edicao": "Megaevolução",
-      "lingua": "br",
-      "preco": 389,
-      "imagem": "imagens/1754664859_1806.jpg"
-    },
-    {
-      "nome": "(PT-BR) Caixa de Booster - Megaevolução 2 - Fogo Fantasmagórico",
-      "edicao": "Fogo Fantasmagórico",
-      "lingua": "br",
-      "preco": 399,
-      "imagem": "imagens/1760453134_8343.jpg"
-    },
-    {
-      "nome": "(PT-BR) Caixa de Booster - Megaevolução 3 - Equilíbrio Perfeito",
-      "edicao": "Equilíbrio Perfeito",
-      "lingua": "br",
-      "preco": 360,
-      "imagem": "imagens/1772645882_1793.jpg"
-    },
-    {
-      "nome": "(PT-BR) Caixa de Booster - Megaevolução 4 - Caos Ascendente",
-      "edicao": "Caos Ascendente",
-      "lingua": "br",
-      "preco": 360,
-      "imagem": "imagens/1776953948_7745.jpg"
-    },
-    {
-      "ultimo": false,
       "novidade": false,
       "prevenda": true,
       "nome": "(PT-BR) Caixa de Booster - Megaevolução 5 - Escuridão Absoluta",
@@ -114,6 +19,110 @@
       "lingua": "us",
       "preco": 1199,
       "imagem": "imagens/1781784016_1812.jpg"
+    },
+    {
+      "nome": "(PT-BR) Caixa de Booster - Megaevolução 4 - Caos Ascendente",
+      "edicao": "Caos Ascendente",
+      "lingua": "br",
+      "preco": 360,
+      "imagem": "imagens/1776953948_7745.jpg",
+      "prevenda": false
+    },
+    {
+      "nome": "(PT-BR) Caixa de Booster - Megaevolução 3 - Equilíbrio Perfeito",
+      "edicao": "Equilíbrio Perfeito",
+      "lingua": "br",
+      "preco": 360,
+      "imagem": "imagens/1772645882_1793.jpg",
+      "prevenda": false
+    },
+    {
+      "nome": "(PT-BR) Caixa de Booster - Megaevolução 2 - Fogo Fantasmagórico",
+      "edicao": "Fogo Fantasmagórico",
+      "lingua": "br",
+      "preco": 399,
+      "imagem": "imagens/1760453134_8343.jpg",
+      "prevenda": false
+    },
+    {
+      "nome": "(PT-BR) Caixa de Booster - Megaevolução 1 - Megaevolução",
+      "edicao": "Megaevolução",
+      "lingua": "br",
+      "preco": 389,
+      "imagem": "imagens/1754664859_1806.jpg",
+      "prevenda": false
+    },
+    {
+      "nome": "(PT-BR) Caixa de Booster - Escarlate e Violeta 10 - Rivais Predestinados",
+      "edicao": "Rivais Predestinados",
+      "lingua": "br",
+      "preco": 899,
+      "imagem": "imagens/1746651503_2905.jpg"
+    },
+    {
+      "imagem": "imagens/1743869919_5001887.jpg",
+      "nome": "(PT-BR) Caixa de Booster - Escarlate e Violeta 9 - Amigos de Jornada",
+      "edicao": "Amigos de Jornada",
+      "lingua": "br",
+      "preco": 379,
+      "prevenda": false
+    },
+    {
+      "imagem": "imagens/1768002176_9827741.jpg",
+      "nome": "(PT-BR) Caixa de Booster - Escarlate e Violeta 6 - Máscaras do Crepúsculo",
+      "edicao": "Máscaras Do Crepúsculo",
+      "lingua": "br",
+      "preco": 899,
+      "prevenda": false,
+      "ultimo": false
+    },
+    {
+      "nome": "(PT-BR) Caixa de Booster - Escarlate e Violeta 4 - Fenda Paradoxal",
+      "edicao": "Fenda Paradoxal",
+      "lingua": "br",
+      "preco": 849,
+      "imagem": "imagens/1697726119_2620.jpg",
+      "ultimo": true
+    },
+    {
+      "ultimo": true,
+      "novidade": false,
+      "prevenda": false,
+      "nome": "(PT-BR) Caixa de Booster - Escarlate e Violeta 3 - Obsidiana em Chamas",
+      "edicao": "Obsidiana em Chamas",
+      "lingua": "br",
+      "preco": 899,
+      "imagem": "imagens/1729859081_2650.jpg"
+    },
+    {
+      "imagem": "imagens/1766327163_6864478.jpg",
+      "nome": "(PT-BR) Caixa de Booster - Espada e Escudo 11 - Origem Perdida",
+      "edicao": "Origem Perdida",
+      "lingua": "br",
+      "preco": 1250,
+      "ultimo": true,
+      "prevenda": false,
+      "novidade": false
+    },
+    {
+      "ultimo": false,
+      "novidade": true,
+      "prevenda": false,
+      "nome": "(PT-BR) Caixa de Booster - Espada e Escudo 10 - Estrelas Radiantes",
+      "edicao": "Estrelas Radiantes",
+      "lingua": "br",
+      "preco": 999,
+      "imagem": "imagens/1653663186_3754.jpg"
+    },
+    {
+      "ultimo": false,
+      "novidade": true,
+      "prevenda": false,
+      "nome": "(PT-BR) Caixa de Booster - Sol e Lua 1",
+      "edicao": "Sol e Lua",
+      "lingua": "br",
+      "preco": 1999,
+      "imagem": "imagens/1587133780_448.jpg"
     },
     {
       "nome": "(CHN) Caixa de Booster - GEM Pack Vol.3",
