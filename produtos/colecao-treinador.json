@@ -21,12 +21,14 @@
       "imagem": "imagens/1781783942_5726.jpg"
     },
     {
-      "nome": "(ING) Coleção Treinador Avançado - Megaevolução 4 - Caos Ascendente",
+      "ultimo": false,
+      "novidade": false,
+      "prevenda": false,
+      "nome": "(PT-BR) Coleção Treinador Avançado - Megaevolução 4 - Caos Ascendente",
       "edicao": "Caos Ascendente",
-      "lingua": "us",
-      "preco": 449,
-      "imagem": "imagens/1776084034_6787.jpg",
-      "prevenda": false
+      "lingua": "br",
+      "preco": 350,
+      "imagem": "imagens/1776953879_5593-1-.jpg"
     },
     {
       "nome": "(ING) Coleção Treinador Avançado - Megaevolução 3 - Equilíbrio Perfeito",
