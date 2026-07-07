@@ -1,6 +1,16 @@
 {
   "items": [
     {
+      "ultimo": false,
+      "novidade": false,
+      "prevenda": true,
+      "nome": "(PT-BR) Blister Triplo Megaevolução 5 - Escuridão Absoluta",
+      "edicao": "Escuridão Absoluta",
+      "lingua": "br",
+      "preco": 38,
+      "imagem": "imagens/1781893923_6039.jpg"
+    },
+    {
       "nome": "(PT-BR) Blister Triplo Megaevolução 4 - Caos Ascendente",
       "edicao": "Caos Ascendente",
       "lingua": "br",
@@ -13,17 +23,18 @@
       "edicao": "Fogo Fantasmagórico",
       "lingua": "br",
       "preco": 36,
-      "imagem": "imagens/1760459065_2612.jpg"
+      "imagem": "imagens/1760459065_2612.jpg",
+      "prevenda": false
     },
     {
       "ultimo": false,
       "novidade": false,
-      "prevenda": true,
-      "nome": "(PT-BR) Blister Triplo Megaevolução 5 - Escuridão Absoluta",
-      "edicao": "Escuridão Absoluta",
+      "prevenda": false,
+      "nome": "(PT-BR) Blister Triplo Megaevolução 1 - Megaevolução",
+      "edicao": "Megaevolução",
       "lingua": "br",
-      "preco": 38,
-      "imagem": "imagens/1781893923_6039.jpg"
+      "preco": 36,
+      "imagem": "imagens/1754664906_708-1-.jpg"
     },
     {
       "ultimo": false,
