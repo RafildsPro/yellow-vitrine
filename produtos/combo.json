@@ -34,6 +34,26 @@
       "lingua": "br",
       "preco": 199,
       "imagem": "imagens/1776953801_6496.jpg"
+    },
+    {
+      "ultimo": false,
+      "novidade": false,
+      "prevenda": true,
+      "nome": "(PT-BR) Combo de Pacotes - Megaevolução 5 - Escuridão Absoluta",
+      "edicao": "Escuridão Absoluta",
+      "lingua": "br",
+      "preco": 199,
+      "imagem": "imagens/1781892380_5854.jpg"
+    },
+    {
+      "ultimo": false,
+      "novidade": false,
+      "prevenda": true,
+      "nome": "(ING) Combo de Pacotes - Megaevolução 5 - Escuridão Absoluta",
+      "edicao": "Escuridão Absoluta",
+      "lingua": "us",
+      "preco": 199,
+      "imagem": "imagens/1781783739_7593.jpg"
     }
   ]
 }
