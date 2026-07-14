@@ -55,14 +55,15 @@
       "nome": "(ING) Coleção Treinador Avançado - Megaevolução 2 - Fogo Fantasmagórico",
       "edicao": "Fogo Fantasmagórico",
       "lingua": "us",
-      "preco": 999,
-      "imagem": "imagens/1760463089_3355.jpg"
+      "preco": 1199,
+      "imagem": "imagens/1760463089_3355.jpg",
+      "ultimo": true
     },
     {
       "nome": "(ING) Coleção Treinador Avançado - Escarlate e Violeta 10.5 - Fogo Branco",
       "edicao": "Fogo Branco",
       "lingua": "us",
-      "preco": 849,
+      "preco": 1199,
       "imagem": "imagens/1752173352_5590.jpg"
     },
     {
