@@ -3,22 +3,12 @@
     {
       "ultimo": false,
       "novidade": false,
-      "prevenda": true,
+      "prevenda": false,
       "nome": "(PT-BR) Caixa de Booster - Megaevolução 5 - Escuridão Absoluta",
       "edicao": "Escuridão Absoluta",
       "lingua": "br",
       "preco": 399,
       "imagem": "imagens/1781893177_7123.jpg"
-    },
-    {
-      "ultimo": false,
-      "novidade": false,
-      "prevenda": true,
-      "nome": "(ING) Caixa de Booster - Megaevolução 5 - Escuridão Absoluta",
-      "edicao": "Escuridão Absoluta",
-      "lingua": "us",
-      "preco": 1199,
-      "imagem": "imagens/1781784016_1812.jpg"
     },
     {
       "nome": "(PT-BR) Caixa de Booster - Megaevolução 4 - Caos Ascendente",
