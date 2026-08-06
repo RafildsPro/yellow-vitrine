@@ -95,7 +95,8 @@
       "lingua": "cn",
       "preco": 649,
       "imagem": "imagens/1756995701_3375.jpg",
-      "prevenda": false
+      "prevenda": false,
+      "esgotado": true
     }
   ]
 }
