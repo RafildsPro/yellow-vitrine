@@ -111,13 +111,16 @@ function criarCard(p) {
       </div>`;
   }
 
+  const msgEsgotado = encodeURIComponent(`Olá! Gostaria de ser avisado quando o produto estiver disponível: ${p.nome}`);
+
   const card = document.createElement('div');
-  card.className = 'card';
+  card.className = 'card' + (p.esgotado ? ' esgotado' : '');
   card.innerHTML = `
-    ${p.ultimo ? `<div class="badge-ultimo">🔥 Último!</div>` : ''}
-    ${p.novidade ? `<div class="badge-novidade">✨ Novidade!</div>` : ''}
-    ${p.prevenda ? `<div class="badge-prevenda">⏳ Pré Venda</div>` : ''}
+    ${p.ultimo && !p.esgotado ? `<div class="badge-ultimo">🔥 Último!</div>` : ''}
+    ${p.novidade && !p.esgotado ? `<div class="badge-novidade">✨ Novidade!</div>` : ''}
+    ${p.prevenda && !p.esgotado ? `<div class="badge-prevenda">⏳ Pré Venda</div>` : ''}
     ${imgHtml}
+    ${p.esgotado ? `<div class="badge-esgotado">⛔ Esgotado</div>` : ''}
     <div class="card-body">
       <div class="card-top">
         <span class="card-edicao" style="background:${cor}">${p.edicao}</span>
@@ -127,7 +130,10 @@ function criarCard(p) {
     </div>
     <div class="card-footer">
       <div class="card-preco">R$ ${p.preco.toFixed(2).replace('.', ',')}</div>
-      <a class="card-wpp" href="${WPP}?text=${msg}" target="_blank">💬 Quero</a>
+      ${p.esgotado
+        ? `<a class="card-wpp" href="${WPP}?text=${msgEsgotado}" target="_blank">🔔 Avisar</a>`
+        : `<a class="card-wpp" href="${WPP}?text=${msg}" target="_blank">💬 Quero</a>`
+      }
     </div>
   `;
 
