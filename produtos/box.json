@@ -1,16 +1,6 @@
 {
   "items": [
     {
-      "ultimo": true,
-      "novidade": false,
-      "prevenda": false,
-      "nome": "(ING) Box Ultra Premium - Mega Charizard X ex",
-      "edicao": "Fogo Fantasmagórico",
-      "lingua": "us",
-      "preco": 1999,
-      "imagem": "imagens/1761224123_7773.jpg"
-    },
-    {
       "ultimo": false,
       "novidade": true,
       "prevenda": false,
@@ -85,6 +75,17 @@
       "edicao": "Box",
       "ultimo": false,
       "novidade": false
+    },
+    {
+      "lingua": "us",
+      "edicao": "Fogo Fantasmagórico",
+      "ultimo": false,
+      "esgotado": true,
+      "preco": 1999,
+      "imagem": "imagens/1761224123_7773.jpg",
+      "novidade": false,
+      "nome": "(ING) Box Ultra Premium - Mega Charizard X ex",
+      "prevenda": false
     }
   ]
 }
