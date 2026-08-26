@@ -25,21 +25,6 @@
       "edicao": "Box"
     },
     {
-      "nome": "(PT-BR) Box Coleção - Escarlate e Violeta - Bellibolt Ex da Kissera",
-      "lingua": "br",
-      "preco": 119,
-      "imagem": "imagens/1744899513_7567.jpg",
-      "edicao": "Box"
-    },
-    {
-      "nome": "(PT-BR) Box Coleção de Torneios Lílian",
-      "lingua": "br",
-      "preco": 129,
-      "imagem": "imagens/1745503208_6290.jpg",
-      "edicao": "Box",
-      "ultimo": true
-    },
-    {
       "nome": "(PT-BR) Box Coleção - Mega Lucario ex",
       "lingua": "br",
       "preco": 99,
@@ -49,7 +34,7 @@
     {
       "nome": "(PT-BR) Box Coleção - Dia de Pokémon 2026",
       "lingua": "br",
-      "preco": 99,
+      "preco": 119,
       "imagem": "imagens/1768388829_9967.jpg",
       "edicao": "Box"
     },
@@ -75,6 +60,23 @@
       "edicao": "Box",
       "ultimo": false,
       "novidade": false
+    },
+    {
+      "nome": "(PT-BR) Box Coleção - Escarlate e Violeta - Bellibolt Ex da Kissera",
+      "lingua": "br",
+      "preco": 129,
+      "imagem": "imagens/1744899513_7567.jpg",
+      "edicao": "Box",
+      "esgotado": true
+    },
+    {
+      "nome": "(PT-BR) Box Coleção de Torneios Lílian",
+      "lingua": "br",
+      "preco": 129,
+      "imagem": "imagens/1745503208_6290.jpg",
+      "edicao": "Box",
+      "ultimo": false,
+      "esgotado": true
     },
     {
       "lingua": "us",
