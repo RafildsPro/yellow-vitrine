@@ -842,8 +842,6 @@ nav a.active {
   color: #fff;
 }
 
-.hero-cartas::before { content: '✨'; }
-.hero-cartas::after  { content: '🌟'; }
 
 /* ── FILTROS ── */
 .filtros {
