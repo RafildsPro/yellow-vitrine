@@ -199,43 +199,20 @@ function renderizar() {
   const modoNetflix = filtroTipo === 'Todos' && filtroAtivo === 'Todos' && !filtroBusca && ordemAtiva === 'padrao';
 
   if (modoNetflix) {
-    const SECOES_HOME = [
-      {
-        titulo: '✨ Novidades',
-        filtrar: p => !!p.novidade,
-      },
-      {
-        titulo: '🎴 Boosters',
-        filtrar: p => ['Caixa de Booster','Blister Triplo','Blister Quádruplo','Combo de Pacotes'].includes(p.tipo) && !p.novidade,
-      },
-      {
-        titulo: '📦 Boxes & Coleções',
-        filtrar: p => ['Box','Coleção Treinador Avançado'].includes(p.tipo) && !p.novidade,
-      },
-      {
-        titulo: '⚡ Singles',
-        filtrar: p => p.tipo === 'Single' && !p.novidade,
-      },
-      {
-        titulo: '🗂️ Outros Produtos',
-        filtrar: p => ['Mini Tin','Outros'].includes(p.tipo) && !p.novidade,
-      },
-    ];
-
-    SECOES_HOME.forEach(secao => {
-      const itens = filtrados.filter(secao.filtrar);
+    CATEGORIAS.forEach(cat => {
+      const itens = filtrados.filter(p => p.tipo === cat.tipo);
       if (itens.length === 0) return;
 
-      const el = document.createElement('div');
-      el.className = 'netflix-secao';
-      el.innerHTML = `<h2 class="netflix-titulo">${secao.titulo} <span class="netflix-count">${itens.length}</span></h2>`;
+      const secao = document.createElement('div');
+      secao.className = 'netflix-secao';
+      secao.innerHTML = `<h2 class="netflix-titulo">${cat.tipo} <span class="netflix-count">${itens.length}</span></h2>`;
 
       const row = document.createElement('div');
       row.className = 'netflix-row';
       itens.forEach(p => row.appendChild(criarCard(p)));
 
-      el.appendChild(row);
-      grid.appendChild(el);
+      secao.appendChild(row);
+      grid.appendChild(secao);
     });
   } else {
     const wrapper = document.createElement('div');
