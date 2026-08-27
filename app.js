@@ -207,11 +207,30 @@ function renderizar() {
       secao.className = 'netflix-secao';
       secao.innerHTML = `<h2 class="netflix-titulo">${cat.tipo} <span class="netflix-count">${itens.length}</span></h2>`;
 
+      const rowWrap = document.createElement('div');
+      rowWrap.className = 'netflix-row-wrap';
+
+      const btnPrev = document.createElement('button');
+      btnPrev.className = 'netflix-arrow netflix-arrow-prev';
+      btnPrev.innerHTML = '&#8249;';
+      btnPrev.setAttribute('aria-label', 'Anterior');
+
+      const btnNext = document.createElement('button');
+      btnNext.className = 'netflix-arrow netflix-arrow-next';
+      btnNext.innerHTML = '&#8250;';
+      btnNext.setAttribute('aria-label', 'Próximo');
+
       const row = document.createElement('div');
       row.className = 'netflix-row';
       itens.forEach(p => row.appendChild(criarCard(p)));
 
-      secao.appendChild(row);
+      btnPrev.addEventListener('click', () => row.scrollBy({ left: -420, behavior: 'smooth' }));
+      btnNext.addEventListener('click', () => row.scrollBy({ left: 420, behavior: 'smooth' }));
+
+      rowWrap.appendChild(btnPrev);
+      rowWrap.appendChild(row);
+      rowWrap.appendChild(btnNext);
+      secao.appendChild(rowWrap);
       grid.appendChild(secao);
     });
   } else {

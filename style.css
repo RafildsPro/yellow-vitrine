@@ -930,6 +930,38 @@ body.dark #filtro-busca::placeholder, body.dark #busca-cartas::placeholder { col
   margin-bottom: 36px;
 }
 
+.netflix-row-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.netflix-arrow {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: #ffcb05;
+  color: #0d1f3c;
+  font-size: 1.5rem;
+  font-weight: 900;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  transition: transform 0.15s, background 0.15s;
+  line-height: 1;
+  z-index: 2;
+}
+
+.netflix-arrow:hover {
+  transform: scale(1.12);
+  background: #ffd740;
+}
+
 .netflix-titulo {
   font-size: 1.15rem;
   font-weight: 900;
