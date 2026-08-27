@@ -13,7 +13,7 @@
     fetch('https://api.counterapi.dev/v1/yellowduck-vitrine/visitas')
       .then(r => r.json())
       .then(d => {
-        document.getElementById('visit-bar').textContent = '📊 Total de visitas ao site: ' + (d.count || '—');
+        document.getElementById('visit-bar').textContent = '📊 Total de visitas ao site: ' + (d.count ?? '—');
       })
       .catch(() => {
         document.getElementById('visit-bar').textContent = '📊 Visitas: indisponível no momento';
