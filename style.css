@@ -342,7 +342,7 @@ nav a.active {
 .hi-6 { width:  70px; top:   18px;  right: 28%;    animation: floatB 24s ease-in-out infinite 3s; }
 .hi-7 { width:  95px; bottom: -8px; left:   6%;    animation: floatA 26s ease-in-out infinite 5s; opacity: 0.06; }
 .hi-8 { width:  75px; top:   10px;  left:  46%;    animation: floatB 32s ease-in-out infinite 7s; }
-.hi-psyduck { width: 300px; bottom: -55px; right: -30px; opacity: 0.08; animation: floatA 40s ease-in-out infinite 3s; }
+.hi-psyduck { width: 260px; bottom: -50px; left: 50%; margin-left: -130px; opacity: 0.12; animation: floatA 40s ease-in-out infinite 3s; }
 
 @keyframes floatA {
   0%, 100% { transform: translateY(0px) rotate(0deg); }
