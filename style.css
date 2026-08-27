@@ -1080,27 +1080,111 @@ body.dark #filtro-busca::placeholder, body.dark #busca-cartas::placeholder { col
 
 /* ── FOOTER ── */
 footer {
-  background: #0d1f3c;
-  color: #8899bb;
-  text-align: center;
-  padding: 24px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  background: #07111f;
+  padding: 36px 24px 28px;
   margin-top: auto;
 }
 
-footer a {
-  color: #ffcb05;
-  text-decoration: none;
-  font-weight: 700;
+.footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-footer a:hover {
-  text-decoration: underline;
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+
+.footer-logo {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+
+.footer-brand-name {
+  font-weight: 900;
+  font-size: 1.05rem;
+  color: #ffcb05;
+  letter-spacing: 0.5px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.88rem;
+  transition: color 0.2s;
+}
+
+.footer-link:hover { color: #ffcb05; }
+
+.footer-link svg { flex-shrink: 0; }
+
+.footer-divider {
+  width: 60px;
+  height: 2px;
+  background: rgba(255,203,5,0.25);
+  border-radius: 2px;
+}
+
+.footer-copy {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.3);
+  margin: 0;
+  font-weight: 600;
+}
+
+/* ── WHATSAPP FLUTUANTE ── */
+.wpp-float {
+  position: fixed;
+  bottom: 26px;
+  left: 26px;
+  width: 54px;
+  height: 54px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.45);
+  z-index: 998;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+}
+
+.wpp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 28px rgba(37,211,102,0.65);
+}
+
+/* ── SHARE BUTTON NO CARD ── */
+.card-share {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.45);
+  cursor: pointer;
+  padding: 2px 4px;
+  font-size: 0.82rem;
+  transition: color 0.2s;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.card-share:hover { color: #ffcb05; }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 640px) {

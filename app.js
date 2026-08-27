@@ -4,7 +4,7 @@ const empty = document.getElementById('empty');
 let todosProdutos = [];
 let filtroAtivo = 'Todos';
 let filtroTipo = 'Todos';
-let filtroBusca = '';
+let filtroBusca = new URLSearchParams(window.location.search).get('q') || '';
 let ordemAtiva = 'padrao';
 
 const COR_TIPO = {
@@ -130,12 +130,19 @@ function criarCard(p) {
     </div>
     <div class="card-footer">
       <div class="card-preco">R$ ${p.preco.toFixed(2).replace('.', ',')}</div>
+      <button class="card-share" title="Copiar link">🔗</button>
       ${p.esgotado
         ? `<a class="card-wpp" href="${WPP}?text=${msgEsgotado}" target="_blank">🔔 Avisar</a>`
         : `<a class="card-wpp" href="${WPP}?text=${msg}" target="_blank">💬 Quero</a>`
       }
     </div>
   `;
+
+  // Listener do botão compartilhar
+  card.querySelector('.card-share').addEventListener('click', (e) => {
+    e.stopPropagation();
+    compartilhar(p.nome);
+  });
 
   // Listeners de imagem e carrossel
   if (imgs.length >= 1) {
@@ -235,5 +242,10 @@ document.getElementById('filtro-tipo').addEventListener('change', (e) => {
   popularFiltro();
   renderizar();
 });
+
+// Pré-preenche busca se vier de link compartilhado
+if (filtroBusca) {
+  document.getElementById('filtro-busca').value = filtroBusca;
+}
 
 carregarProdutos();
