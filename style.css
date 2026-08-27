@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Nunito', sans-serif;
   background: #fffdf4;
@@ -386,11 +390,92 @@ nav a.active {
 }
 
 .hero-logo {
-  width: 140px;
-  height: 140px;
+  width: 110px;
+  height: 110px;
   object-fit: contain;
   margin-bottom: 8px;
   filter: drop-shadow(0 4px 16px rgba(0,0,0,0.3));
+}
+
+/* ── HERO TRUST BADGES ── */
+.hero-trust {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0 22px;
+}
+
+.hero-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.92);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 50px;
+  backdrop-filter: blur(4px);
+  white-space: nowrap;
+}
+
+/* ── HERO CTAs ── */
+.hero-ctas {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.btn-ver-produtos {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffcb05;
+  color: #0d1f3c;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 1rem;
+  padding: 13px 32px;
+  border-radius: 50px;
+  box-shadow: 0 4px 16px rgba(255,203,5,0.45);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.btn-ver-produtos:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(255,203,5,0.65);
+}
+
+.btn-wpp-hero {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(37,211,102,0.12);
+  border: 2px solid #25d366;
+  color: #4eff9c;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 11px 26px;
+  border-radius: 50px;
+  transition: background 0.15s, transform 0.15s;
+}
+
+.btn-wpp-hero:hover {
+  background: rgba(37,211,102,0.25);
+  transform: translateY(-2px);
+}
+
+/* ── CARD PREÇO + SHARE ── */
+.card-preco-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
 }
 
 /* ── FADE IN ── */
@@ -1218,21 +1303,50 @@ footer {
 
   /* Hero */
   .hero {
-    padding: 36px 16px 32px;
+    padding: 32px 16px 28px;
+  }
+
+  .hero-logo {
+    width: 80px;
+    height: 80px;
   }
 
   .hero-badge {
-    font-size: 0.78rem;
-    padding: 3px 14px;
+    font-size: 0.75rem;
+    padding: 3px 12px;
   }
 
   .hero h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-shadow: 2px 2px 0px #0d1f3c;
   }
 
   .hero p {
-    font-size: 0.88rem;
+    font-size: 0.86rem;
+  }
+
+  .hero-trust {
+    gap: 6px;
+    margin: 14px 0 16px;
+  }
+
+  .hero-trust-item {
+    font-size: 0.72rem;
+    padding: 5px 10px;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-ver-produtos,
+  .btn-wpp-hero {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+    font-size: 0.92rem;
+    padding: 11px 20px;
   }
 
   .hi-1 { width: 110px; }

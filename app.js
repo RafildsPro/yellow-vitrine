@@ -129,8 +129,10 @@ function criarCard(p) {
       <div class="card-nome">${p.nome}</div>
     </div>
     <div class="card-footer">
-      <div class="card-preco">R$ ${p.preco.toFixed(2).replace('.', ',')}</div>
-      <button class="card-share" title="Copiar link">🔗</button>
+      <div class="card-preco-row">
+        <div class="card-preco">R$ ${p.preco.toFixed(2).replace('.', ',')}</div>
+        <button class="card-share" title="Copiar link">🔗</button>
+      </div>
       ${p.esgotado
         ? `<a class="card-wpp" href="${WPP}?text=${msgEsgotado}" target="_blank">🔔 Avisar</a>`
         : `<a class="card-wpp" href="${WPP}?text=${msg}" target="_blank">💬 Quero</a>`
@@ -197,20 +199,43 @@ function renderizar() {
   const modoNetflix = filtroTipo === 'Todos' && filtroAtivo === 'Todos' && !filtroBusca && ordemAtiva === 'padrao';
 
   if (modoNetflix) {
-    CATEGORIAS.forEach(cat => {
-      const itens = filtrados.filter(p => p.tipo === cat.tipo);
+    const SECOES_HOME = [
+      {
+        titulo: '✨ Novidades',
+        filtrar: p => !!p.novidade,
+      },
+      {
+        titulo: '🎴 Boosters',
+        filtrar: p => ['Caixa de Booster','Blister Triplo','Blister Quádruplo','Combo de Pacotes'].includes(p.tipo) && !p.novidade,
+      },
+      {
+        titulo: '📦 Boxes & Coleções',
+        filtrar: p => ['Box','Coleção Treinador Avançado'].includes(p.tipo) && !p.novidade,
+      },
+      {
+        titulo: '⚡ Singles',
+        filtrar: p => p.tipo === 'Single' && !p.novidade,
+      },
+      {
+        titulo: '🗂️ Outros Produtos',
+        filtrar: p => ['Mini Tin','Outros'].includes(p.tipo) && !p.novidade,
+      },
+    ];
+
+    SECOES_HOME.forEach(secao => {
+      const itens = filtrados.filter(secao.filtrar);
       if (itens.length === 0) return;
 
-      const secao = document.createElement('div');
-      secao.className = 'netflix-secao';
-      secao.innerHTML = `<h2 class="netflix-titulo">${cat.tipo} <span class="netflix-count">${itens.length}</span></h2>`;
+      const el = document.createElement('div');
+      el.className = 'netflix-secao';
+      el.innerHTML = `<h2 class="netflix-titulo">${secao.titulo} <span class="netflix-count">${itens.length}</span></h2>`;
 
       const row = document.createElement('div');
       row.className = 'netflix-row';
       itens.forEach(p => row.appendChild(criarCard(p)));
 
-      secao.appendChild(row);
-      grid.appendChild(secao);
+      el.appendChild(row);
+      grid.appendChild(el);
     });
   } else {
     const wrapper = document.createElement('div');
