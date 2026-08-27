@@ -296,31 +296,59 @@ nav a.active {
 
 /* ── HERO ── */
 .hero {
-  background: linear-gradient(135deg, #0d1f3c 0%, #1a3a6e 40%, #ffcb05 100%);
+  background: linear-gradient(135deg, #0a1628 0%, #0d1f3c 30%, #1a3a6e 60%, #c9a200 100%);
   text-align: center;
   padding: 56px 24px 52px;
   position: relative;
   overflow: hidden;
 }
 
-.hero-silhuetas {
+/* Fundo: container dos ícones e brilho */
+.hero-bg {
   position: absolute;
   inset: 0;
   pointer-events: none;
+  z-index: 1;
 }
 
-.sil {
+/* Brilho dourado central */
+.hero-glow {
   position: absolute;
-  font-size: 120px;
-  opacity: 0.07;
-  filter: grayscale(1);
+  top: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 720px;
+  height: 420px;
+  background: radial-gradient(ellipse at center, rgba(255,203,5,0.22) 0%, rgba(255,203,5,0.06) 45%, transparent 70%);
+  pointer-events: none;
 }
 
-.sil-1 { top: -10px; left: 2%;  font-size: 160px; }
-.sil-2 { top: 10px;  left: 18%; font-size: 100px; }
-.sil-3 { bottom: -10px; right: 18%; font-size: 130px; }
-.sil-4 { top: 5px;  right: 2%;  font-size: 110px; }
-.sil-5 { bottom: 5px; left: 38%; font-size: 90px; }
+/* Ícones SVG de tipo */
+.hero-icon {
+  position: absolute;
+  opacity: 0.09;
+}
+
+/* Distribuição e tamanho dos ícones */
+.hi-1 { width: 170px; top: -18px;  left: -18px;   animation: floatA 28s ease-in-out infinite; }
+.hi-2 { width:  90px; top:  12px;  left:  22%;     animation: floatB 22s ease-in-out infinite 2s; }
+.hi-3 { width: 140px; bottom: -20px; right: 14%;   animation: floatA 25s ease-in-out infinite 4s; }
+.hi-4 { width: 110px; top:    8px;  right:  8%;    animation: floatB 30s ease-in-out infinite 1s; }
+.hi-5 { width:  80px; bottom:  6px; left:  40%;    animation: floatA 20s ease-in-out infinite 6s; }
+.hi-6 { width:  70px; top:   18px;  right: 28%;    animation: floatB 24s ease-in-out infinite 3s; }
+.hi-7 { width:  95px; bottom: -8px; left:   6%;    animation: floatA 26s ease-in-out infinite 5s; opacity: 0.06; }
+.hi-8 { width:  75px; top:   10px;  left:  46%;    animation: floatB 32s ease-in-out infinite 7s; }
+
+@keyframes floatA {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33%       { transform: translateY(-14px) rotate(4deg); }
+  66%       { transform: translateY(8px) rotate(-3deg); }
+}
+@keyframes floatB {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33%       { transform: translateY(12px) rotate(-5deg); }
+  66%       { transform: translateY(-10px) rotate(3deg); }
+}
 
 .hero-content {
   position: relative;
@@ -1122,8 +1150,9 @@ footer a:hover {
     font-size: 0.88rem;
   }
 
-  .sil { font-size: 70px; }
-  .sil-1 { font-size: 90px; }
+  .hi-1 { width: 110px; }
+  .hi-3 { width: 90px; }
+  .hi-4 { width: 70px; }
 
   /* Filtros */
   .filtros {
