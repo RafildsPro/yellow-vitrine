@@ -11,7 +11,7 @@ export default async function handler(req, res) {
 
   const headers = { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' };
 
-  const hoje = new Date().toISOString().slice(0, 10); // "2026-08-27"
+  const hoje = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Sao_Paulo' }); // "2026-08-27" no fuso BR
   const chaveHoje = `visitas:${hoje}`;
 
   try {
