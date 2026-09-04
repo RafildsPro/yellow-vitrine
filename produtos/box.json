@@ -43,14 +43,16 @@
       "lingua": "br",
       "preco": 129,
       "imagem": "imagens/1770642411_1649.jpg",
-      "edicao": "Box"
+      "edicao": "Box",
+      "esgotado": true
     },
     {
       "nome": "(PT-BR) Box Coleção - Mega Charizard X",
       "lingua": "br",
       "preco": 129,
       "imagem": "imagens/1770642425_1399.jpg",
-      "edicao": "Box"
+      "edicao": "Box",
+      "esgotado": true
     },
     {
       "nome": " (PT-BR) Baralho Pré Construído - Baralho Batalha de Liga - Mewtwo ex da Equipe Rocket",
