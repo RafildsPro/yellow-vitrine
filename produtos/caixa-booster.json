@@ -27,19 +27,19 @@
       "prevenda": false
     },
     {
-      "nome": "(PT-BR) Caixa de Booster - Megaevolução 2 - Fogo Fantasmagórico",
-      "edicao": "Fogo Fantasmagórico",
-      "lingua": "br",
-      "preco": 432,
-      "imagem": "imagens/1760453134_8343.jpg",
-      "prevenda": false
-    },
-    {
       "nome": "(PT-BR) Caixa de Booster - Megaevolução 1 - Megaevolução",
       "edicao": "Megaevolução",
       "lingua": "br",
       "preco": 389,
       "imagem": "imagens/1754664859_1806.jpg",
+      "prevenda": false
+    },
+    {
+      "nome": "(PT-BR) Caixa de Booster - Megaevolução 2 - Fogo Fantasmagórico",
+      "edicao": "Fogo Fantasmagórico",
+      "lingua": "br",
+      "preco": 432,
+      "imagem": "imagens/1760453134_8343.jpg",
       "prevenda": false
     },
     {
@@ -90,7 +90,8 @@
       "lingua": "br",
       "preco": 849,
       "imagem": "imagens/1697726119_2620.jpg",
-      "ultimo": true
+      "ultimo": false,
+      "esgotado": true
     },
     {
       "ultimo": true,
@@ -103,14 +104,15 @@
       "imagem": "imagens/1729859081_2650.jpg"
     },
     {
-      "ultimo": false,
-      "novidade": true,
-      "prevenda": false,
-      "nome": "(PT-BR) Caixa de Booster - Espada e Escudo 10 - Estrelas Radiantes",
-      "edicao": "Estrelas Radiantes",
       "lingua": "br",
+      "edicao": "Estrelas Radiantes",
+      "ultimo": false,
+      "esgotado": true,
       "preco": 999,
-      "imagem": "imagens/1653663186_3754.jpg"
+      "imagem": "imagens/1653663186_3754.jpg",
+      "novidade": false,
+      "nome": "(PT-BR) Caixa de Booster - Espada e Escudo 10 - Estrelas Radiantes",
+      "prevenda": false
     },
     {
       "ultimo": false,
