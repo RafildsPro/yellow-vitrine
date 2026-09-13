@@ -68,7 +68,7 @@
       "lingua": "br",
       "edicao": "Fagulhas Impetuosas",
       "ultimo": false,
-      "esgotado": false,
+      "esgotado": true,
       "preco": 899,
       "imagem": "imagens/1728928621_6826.jpg",
       "novidade": false,
@@ -94,14 +94,15 @@
       "esgotado": true
     },
     {
-      "ultimo": true,
-      "novidade": false,
-      "prevenda": false,
-      "nome": "(PT-BR) Caixa de Booster - Escarlate e Violeta 3 - Obsidiana em Chamas",
-      "edicao": "Obsidiana em Chamas",
       "lingua": "br",
+      "edicao": "Obsidiana em Chamas",
+      "ultimo": false,
+      "esgotado": true,
       "preco": 899,
-      "imagem": "imagens/1729859081_2650.jpg"
+      "imagem": "imagens/1729859081_2650.jpg",
+      "novidade": false,
+      "nome": "(PT-BR) Caixa de Booster - Escarlate e Violeta 3 - Obsidiana em Chamas",
+      "prevenda": false
     },
     {
       "lingua": "br",
