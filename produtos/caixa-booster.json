@@ -45,8 +45,8 @@
     {
       "lingua": "us",
       "edicao": "Rivais Predestinados",
-      "ultimo": true,
-      "esgotado": false,
+      "ultimo": false,
+      "esgotado": true,
       "preco": 2649,
       "imagem": "imagens/1746555869_72.jpg",
       "novidade": false,
