@@ -14,6 +14,20 @@
 </head>
 <body>
 
+  <div id="aviso-banner"></div>
+  <script>
+    fetch('aviso.json').then(r => r.json()).then(av => {
+      if (!av.ativo) return;
+      const b = document.getElementById('aviso-banner');
+      b.style.display = 'block';
+      b.innerHTML = `
+        <div class="aviso-titulo">${av.titulo}</div>
+        <div class="aviso-msg">${av.mensagem}</div>
+        ${av.whatsapp ? '<a class="aviso-wpp" href="https://wa.me/5531984622230" target="_blank">💬 Falar no WhatsApp</a>' : ''}
+      `;
+    }).catch(() => {});
+  </script>
+
   <header>
     <div class="header-inner">
       <div class="logo">
