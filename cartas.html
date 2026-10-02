@@ -15,6 +15,12 @@
 <body>
 
   <div id="aviso-banner"></div>
+  <div id="aviso-pausa">
+    <img src="imagens/logo.png" alt="Yellow Duck TCG" />
+    <div class="pausa-titulo">⚡ Vitrine pausada</div>
+    <div class="pausa-msg" id="pausa-msg-texto"></div>
+    <a class="pausa-wpp" href="https://wa.me/5531984622230" target="_blank">💬 Falar no WhatsApp</a>
+  </div>
   <script>
     fetch('aviso.json').then(r => r.json()).then(av => {
       if (!av.ativo) return;
@@ -23,8 +29,10 @@
       b.innerHTML = `
         <div class="aviso-titulo">${av.titulo}</div>
         <div class="aviso-msg">${av.mensagem}</div>
-        ${av.whatsapp ? '<a class="aviso-wpp" href="https://wa.me/5531984622230" target="_blank">💬 Falar no WhatsApp</a>' : ''}
       `;
+      document.getElementById('main-content').style.display = 'none';
+      document.getElementById('aviso-pausa').style.display = 'flex';
+      document.getElementById('pausa-msg-texto').textContent = av.mensagem;
     }).catch(() => {});
   </script>
 
@@ -48,7 +56,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
     <section class="hero hero-cartas">
       <div class="hero-bg">
         <div class="hero-glow"></div>

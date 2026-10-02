@@ -44,6 +44,52 @@
 }
 #aviso-banner .aviso-wpp:hover { opacity: 0.85; }
 
+/* Tela de pausa (cobre o conteúdo quando vitrine está pausada) */
+#aviso-pausa {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 48px 20px;
+  text-align: center;
+  gap: 20px;
+}
+#aviso-pausa img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+}
+#aviso-pausa .pausa-titulo {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #0d1f3c;
+}
+body.dark #aviso-pausa .pausa-titulo { color: #ffcb05; }
+#aviso-pausa .pausa-msg {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  max-width: 480px;
+  line-height: 1.6;
+}
+body.dark #aviso-pausa .pausa-msg { color: #ccc; }
+#aviso-pausa .pausa-wpp {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #25d366;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 12px 28px;
+  border-radius: 24px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+#aviso-pausa .pausa-wpp:hover { opacity: 0.85; }
+
 html {
   scroll-behavior: smooth;
 }
