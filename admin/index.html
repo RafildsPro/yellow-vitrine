@@ -104,6 +104,17 @@
             }]
           },
           {
+            name: 'aviso', label: '📢 Aviso de Evento',
+            files: [{ label: 'Aviso de Evento', name: 'aviso', file: 'aviso.json',
+              fields: [
+                { label: 'Ativar aviso?', name: 'ativo', widget: 'boolean', default: false },
+                { label: 'Título', name: 'titulo', widget: 'string', default: '⚡ Vitrine pausada temporariamente' },
+                { label: 'Mensagem', name: 'mensagem', widget: 'text' },
+                { label: 'Mostrar botão WhatsApp?', name: 'whatsapp', widget: 'boolean', default: true }
+              ]
+            }]
+          },
+          {
             name: 'cartas', label: 'Cartas em Destaque',
             files: [{ label: 'Lista de Cartas', name: 'cartas', file: 'cartas.json',
               fields: [{ label: 'Cartas', name: 'items', widget: 'list', fields: [
