@@ -47,7 +47,8 @@
       "edicao": "Fogo Branco",
       "lingua": "br",
       "preco": 649,
-      "imagem": "imagens/1752781394_8416-1-.jpg"
+      "imagem": "imagens/1752781394_8416-1-.jpg",
+      "esgotado": true
     },
     {
       "nome": "(PT-BR) Combo de Pacotes - Escarlate e Violeta 8.5 - Evoluções Prismáticas",
