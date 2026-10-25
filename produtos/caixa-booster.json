@@ -1,14 +1,6 @@
 {
   "items": [
     {
-      "nome": "(PT-BR) Caixa de Booster - Escarlate e Violeta 9 - Amigos de Jornada",
-      "edicao": "Amigos De Jornada",
-      "lingua": "br",
-      "preco": 649,
-      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/f8c661cc-d527-4f30-91dc-6110acbbe047.jpg",
-      "ultimo": true
-    },
-    {
       "nome": "(PT-BR) Caixa de Booster - Megaevolução 6 - Reinado Delta",
       "edicao": "Reinado Delta",
       "lingua": "br",
@@ -52,14 +44,6 @@
       "ultimo": true
     },
     {
-      "nome": "(PT-BR) Caixa de Booster - Megaevolução 1 - Megaevolução",
-      "edicao": "Megaevolução",
-      "lingua": "br",
-      "preco": 399,
-      "imagem": "imagens/1754664859_1806.jpg",
-      "prevenda": false
-    },
-    {
       "nome": "(PT-BR) Caixa de Booster - Megaevolução 2 - Fogo Fantasmagórico",
       "edicao": "Fogo Fantasmagórico",
       "lingua": "br",
@@ -67,6 +51,15 @@
       "imagem": "imagens/1760453134_8343.jpg",
       "prevenda": false,
       "ultimo": true
+    },
+    {
+      "nome": "(PT-BR) Caixa de Booster - Megaevolução 1 - Megaevolução",
+      "edicao": "Megaevolução",
+      "lingua": "br",
+      "preco": 399,
+      "imagem": "imagens/1754664859_1806.jpg",
+      "prevenda": false,
+      "ultimo": false
     },
     {
       "lingua": "us",
@@ -89,6 +82,14 @@
       "novidade": false,
       "nome": "(PT-BR) Caixa de Booster - Escarlate e Violeta 10 - Rivais Predestinados",
       "prevenda": false
+    },
+    {
+      "nome": "(PT-BR) Caixa de Booster - Escarlate e Violeta 9 - Amigos de Jornada",
+      "edicao": "Amigos De Jornada",
+      "lingua": "br",
+      "preco": 649,
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/f8c661cc-d527-4f30-91dc-6110acbbe047.jpg",
+      "ultimo": true
     },
     {
       "lingua": "br",
