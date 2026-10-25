@@ -88,9 +88,14 @@ function compartilhar(nome) {
   }
 }
 
+// 1499 -> "1.499,00"
+function formatarPreco(valor) {
+  return valor.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+
 function criarCard(p) {
   const cor = COR_TIPO[p.tipo] || '#0d1f3c';
-  const precoFmt = p.preco.toFixed(2).replace('.', ',');
+  const precoFmt = formatarPreco(p.preco);
   const msg = encodeURIComponent(`Olá! Tenho interesse no produto: ${p.nome} (R$ ${precoFmt})`);
 
   // Suporte a múltiplas imagens (imagens[]) e imagem única (imagem)
@@ -100,11 +105,11 @@ function criarCard(p) {
   if (imgs.length === 0) {
     imgHtml = `<div class="card-img-placeholder">📦</div>`;
   } else if (imgs.length === 1) {
-    imgHtml = `<img class="card-img" src="${imgs[0]}" alt="${p.nome}" style="cursor:zoom-in" onerror="this.outerHTML='<div class=\\'card-img-placeholder\\'>📦</div>'" />`;
+    imgHtml = `<img class="card-img" src="${imgs[0]}" alt="${p.nome}" loading="lazy" decoding="async" style="cursor:zoom-in" onerror="this.outerHTML='<div class=\\'card-img-placeholder\\'>📦</div>'" />`;
   } else {
     imgHtml = `
       <div class="card-carousel">
-        <img class="card-img" src="${imgs[0]}" alt="${p.nome}" style="cursor:zoom-in" />
+        <img class="card-img" src="${imgs[0]}" alt="${p.nome}" loading="lazy" decoding="async" style="cursor:zoom-in" />
         <button class="carousel-btn carousel-prev" type="button">‹</button>
         <button class="carousel-btn carousel-next" type="button">›</button>
         <div class="carousel-dots">
@@ -132,7 +137,7 @@ function criarCard(p) {
     </div>
     <div class="card-footer">
       <div class="card-preco-row">
-        <div class="card-preco">R$ ${p.preco.toFixed(2).replace('.', ',')}</div>
+        <div class="card-preco">R$ ${precoFmt}</div>
         <button class="card-share" title="Copiar link">🔗</button>
       </div>
       ${p.esgotado
@@ -174,11 +179,17 @@ function criarCard(p) {
   return card;
 }
 
+// Esgotados vão para o fim, mantendo a ordem dos disponíveis
+function esgotadosPorUltimo(lista) {
+  return [...lista.filter(p => !p.esgotado), ...lista.filter(p => p.esgotado)];
+}
+
 function ordenar(lista) {
-  if (ordemAtiva === 'menor') return [...lista].sort((a,b) => a.preco - b.preco);
-  if (ordemAtiva === 'maior') return [...lista].sort((a,b) => b.preco - a.preco);
-  if (ordemAtiva === 'az')    return [...lista].sort((a,b) => a.nome.localeCompare(b.nome));
-  return lista;
+  let ordenada = lista;
+  if (ordemAtiva === 'menor') ordenada = [...lista].sort((a,b) => a.preco - b.preco);
+  if (ordemAtiva === 'maior') ordenada = [...lista].sort((a,b) => b.preco - a.preco);
+  if (ordemAtiva === 'az')    ordenada = [...lista].sort((a,b) => a.nome.localeCompare(b.nome));
+  return esgotadosPorUltimo(ordenada);
 }
 
 function renderizar() {

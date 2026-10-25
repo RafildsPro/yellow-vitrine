@@ -939,6 +939,7 @@ nav a.active {
 
 .filtros-inner {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 12px;
 }
@@ -959,6 +960,18 @@ nav a.active {
 body.dark .aviso-disponibilidade {
   background: #2a2711;
   color: #f3e7a3;
+}
+
+/* Hora da última atualização do estoque, dentro do aviso (preenchida por nav.js) */
+.aviso-disponibilidade .atualizado {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+.aviso-disponibilidade .atualizado:empty {
+  display: none;
 }
 
 /* "Cartas em Destaque" no menu: escondido até existir alguma carta (ver nav.js) */
