@@ -961,6 +961,11 @@ body.dark .aviso-disponibilidade {
   color: #f3e7a3;
 }
 
+/* "Cartas em Destaque" no menu: escondido até existir alguma carta (ver nav.js) */
+.nav-cartas-oculto {
+  display: none;
+}
+
 #filtro-busca, #busca-cartas {
   appearance: none;
   background: #ffcb05;
