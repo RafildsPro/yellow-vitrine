@@ -1,6 +1,27 @@
 {
   "items": [
     {
+      "nome": "(PT-BR) Box Coleção ex - Lendas Azuis",
+      "edicao": "Box",
+      "lingua": "br",
+      "preco": 250,
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/936d6512-858a-49c6-80f0-4acd4db3b59e.jpg"
+    },
+    {
+      "nome": "(PT-BR) Coleção Ilustração - Escarlate e Violeta 10.5 - Fogo Branco e Raio Preto - Victini",
+      "edicao": "Box",
+      "lingua": "br",
+      "preco": 279,
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/6261bd26-545f-4889-ae3b-52757cc137d8.jpg"
+    },
+    {
+      "nome": "(ING) Caixa - Megaevolução - Heróis Excelsos - Mega Meganium ex Box",
+      "edicao": "Heróis Excelsos",
+      "lingua": "us",
+      "preco": 299,
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/5b66aeec-c641-4c6d-9098-0419f91458a4.jpg"
+    },
+    {
       "ultimo": false,
       "novidade": true,
       "prevenda": false,

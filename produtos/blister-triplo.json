@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "nome": "(PT-BR) Blister Triplo Escarlate e Violeta 7 - Coroa Estelar ",
+      "edicao": "Coroa Estelar",
+      "lingua": "br",
+      "preco": 89,
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/3c576b7a-cb02-46ee-a376-9c3358395443.jpg"
+    },
+    {
       "nome": "(PT-BR) Blister Triplo Megaevolução 6 - Reinado Delta - Spritzee",
       "edicao": "Reinado Delta",
       "lingua": "br",

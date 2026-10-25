@@ -1,3 +1,29 @@
 {
-  "items": []
+  "items": [
+    {
+      "nome": "Kit Inicial - Wilds Unknown 2-Player Starter Set",
+      "edicao": "Lorcana",
+      "preco": 199,
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/8cfb8763-a8d4-499c-a845-0f443f11322e.jpg"
+    },
+    {
+      "nome": "Kit Colecionável - Collection Starter Set - Rapunzel",
+      "edicao": "Lorcana",
+      "preco": 219,
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/3f74055b-a5f8-4bfc-aa03-4b455e63896c.jpg"
+    },
+    {
+      "nome": "Kit Inicial - Hyperia City 2-Player Starter Set",
+      "edicao": "Lorcana",
+      "preco": 199,
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/bceec894-56e5-4992-9f96-fb6259ff3e7e.jpg"
+    },
+    {
+      "nome": "(ING) Caixa de Booster - Hyperia City",
+      "edicao": "Lorcana",
+      "lingua": "us",
+      "preco": 999,
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/ef38fa61-f2a7-4ff2-a395-7311d25dd781.jpg"
+    }
+  ]
 }
