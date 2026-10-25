@@ -1380,6 +1380,19 @@ footer {
 
 .footer-link svg { flex-shrink: 0; }
 
+/* Aba do grupo no menu: o emoji e a palavra não podem se separar em telas estreitas */
+.nav-grupo {
+  white-space: nowrap;
+}
+
+.footer-grupo {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.5);
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
+
 .footer-divider {
   width: 60px;
   height: 2px;
