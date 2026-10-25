@@ -1,6 +1,14 @@
 {
   "items": [
     {
+      "nome": "(PT-BR) Blister Quádruplo Megaevolução 6 - Reinado Delta - Seel",
+      "edicao": "Reinado Delta",
+      "lingua": "br",
+      "preco": 48,
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/5c62b323-1d1d-4d9a-b62f-6e1f1eca2230.jpg",
+      "prevenda": true
+    },
+    {
       "ultimo": false,
       "novidade": false,
       "prevenda": false,

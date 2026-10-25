@@ -1,6 +1,22 @@
 {
   "items": [
     {
+      "nome": "(PT-BR) Combo de Pacotes - Megaevolução 6 - Reinado Delta",
+      "edicao": "Reinado Delta",
+      "lingua": "br",
+      "preco": 199,
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/4b6967f8-51d6-4910-8f40-252b0b0cbc27.jpg",
+      "prevenda": true
+    },
+    {
+      "nome": "(ING) Combo de Pacotes - Megaevolução 6 - Reinado Delta",
+      "edicao": "Reinado Delta",
+      "lingua": "us",
+      "preco": 190,
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/d02dead2-f8f2-43dd-83f3-db28528cd800.jpg",
+      "prevenda": true
+    },
+    {
       "ultimo": false,
       "novidade": false,
       "prevenda": false,

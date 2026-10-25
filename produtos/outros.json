@@ -1,6 +1,31 @@
 {
   "items": [
     {
+      "nome": "(PT-BR) Coleção Ilustração - Escarlate e Violeta 10.5 - Fogo Branco e Raio Preto - Victini",
+      "edicao": "Box",
+      "lingua": "br",
+      "preco": 279,
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/6261bd26-545f-4889-ae3b-52757cc137d8.jpg"
+    },
+    {
+      "nome": "Kit Inicial - Wilds Unknown 2-Player Starter Set",
+      "edicao": "Lorcana",
+      "preco": 199,
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/8cfb8763-a8d4-499c-a845-0f443f11322e.jpg"
+    },
+    {
+      "nome": "Kit Colecionável - Collection Starter Set - Rapunzel",
+      "edicao": "Lorcana",
+      "preco": 219,
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/3f74055b-a5f8-4bfc-aa03-4b455e63896c.jpg"
+    },
+    {
+      "nome": "Kit Inicial - Hyperia City 2-Player Starter Set",
+      "edicao": "Lorcana",
+      "preco": 199,
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/bceec894-56e5-4992-9f96-fb6259ff3e7e.jpg"
+    },
+    {
       "ultimo": false,
       "novidade": true,
       "prevenda": false,

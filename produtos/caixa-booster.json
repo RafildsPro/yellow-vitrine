@@ -1,6 +1,29 @@
 {
   "items": [
     {
+      "nome": "(ING) Caixa de Booster - Hyperia City",
+      "edicao": "Lorcana",
+      "lingua": "us",
+      "preco": 999,
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/ef38fa61-f2a7-4ff2-a395-7311d25dd781.jpg"
+    },
+    {
+      "nome": "(PT-BR) Caixa de Booster - Megaevolução 6 - Reinado Delta",
+      "edicao": "Reinado Delta",
+      "lingua": "br",
+      "preco": 379,
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/36273af4-30da-42e7-b593-315e394864aa.jpg",
+      "prevenda": true
+    },
+    {
+      "nome": "(ING) Caixa de Booster - Megaevolução 6 - Reinado Delta",
+      "edicao": "Reinado Delta",
+      "lingua": "us",
+      "preco": 1150,
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/dd1bad35-84a2-4759-8888-f29a3192ead5.jpg",
+      "prevenda": true
+    },
+    {
       "ultimo": false,
       "novidade": false,
       "prevenda": false,
@@ -14,7 +37,7 @@
       "nome": "(PT-BR) Caixa de Booster - Megaevolução 4 - Caos Ascendente",
       "edicao": "Caos Ascendente",
       "lingua": "br",
-      "preco": 360,
+      "preco": 399,
       "imagem": "imagens/1776953948_7745.jpg",
       "prevenda": false
     },
@@ -30,7 +53,7 @@
       "nome": "(PT-BR) Caixa de Booster - Megaevolução 1 - Megaevolução",
       "edicao": "Megaevolução",
       "lingua": "br",
-      "preco": 389,
+      "preco": 399,
       "imagem": "imagens/1754664859_1806.jpg",
       "prevenda": false
     },
@@ -58,7 +81,7 @@
       "edicao": "Rivais Predestinados",
       "ultimo": false,
       "esgotado": false,
-      "preco": 999,
+      "preco": 1190,
       "imagem": "imagens/1746651503_2905-2-.jpg",
       "novidade": false,
       "nome": "(PT-BR) Caixa de Booster - Escarlate e Violeta 10 - Rivais Predestinados",
@@ -108,8 +131,8 @@
       "lingua": "br",
       "edicao": "Estrelas Radiantes",
       "ultimo": false,
-      "esgotado": true,
-      "preco": 999,
+      "esgotado": false,
+      "preco": 1499,
       "imagem": "imagens/1653663186_3754.jpg",
       "novidade": false,
       "nome": "(PT-BR) Caixa de Booster - Espada e Escudo 10 - Estrelas Radiantes",

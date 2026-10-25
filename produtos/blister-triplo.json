@@ -1,13 +1,21 @@
 {
   "items": [
     {
+      "nome": "(PT-BR) Blister Triplo Megaevolução 6 - Reinado Delta - Spritzee",
+      "edicao": "Reinado Delta",
+      "lingua": "br",
+      "preco": 36,
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/a5a13c5a-6848-456e-8c44-394606d9cd65.jpg",
+      "prevenda": true
+    },
+    {
       "ultimo": false,
       "novidade": false,
       "prevenda": false,
       "nome": "(PT-BR) Blister Triplo Megaevolução 5 - Escuridão Absoluta",
       "edicao": "Escuridão Absoluta",
       "lingua": "br",
-      "preco": 38,
+      "preco": 36,
       "imagem": "imagens/1781893923_6039.jpg"
     },
     {
@@ -62,7 +70,7 @@
       "nome": "(PT-BR) Blister Triplo Escarlate e Violeta 10 - Rivais Predestinados",
       "edicao": "Rivais Predestinados",
       "lingua": "br",
-      "preco": 60,
+      "preco": 89,
       "imagem": "imagens/1748365855_2255-1-.jpg",
       "prevenda": false
     },
@@ -70,7 +78,7 @@
       "nome": "(PT-BR) Blister Triplo Escarlate e Violeta 8.5 - Evoluções Prismáticas",
       "edicao": "Evoluções Prismáticas",
       "lingua": "br",
-      "preco": 52,
+      "preco": 59,
       "imagem": "imagens/1738164597_5550.jpg",
       "prevenda": false
     },
@@ -82,7 +90,8 @@
       "edicao": "Realeza Absoluta",
       "lingua": "br",
       "preco": 199,
-      "imagem": "imagens/1672258063_4667.jpg"
+      "imagem": "imagens/1672258063_4667.jpg",
+      "esgotado": true
     }
   ]
 }

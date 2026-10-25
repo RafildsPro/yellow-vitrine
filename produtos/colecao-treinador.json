@@ -1,6 +1,29 @@
 {
   "items": [
     {
+      "nome": "(ING) Coleção Treinador Avançado - Céus em Evolução 02",
+      "edicao": "Céus Em Evolução",
+      "lingua": "us",
+      "preco": 5999,
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/3c59c9c7-8389-49e9-a52b-f92eece9ffbc.jpg"
+    },
+    {
+      "nome": "(PT-BR) Coleção Treinador Avançado - Megaevolução 6 - Reinado Delta",
+      "edicao": "Reinado Delta",
+      "lingua": "br",
+      "preco": 399,
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/a0a5f31a-e619-4a5c-b26d-900da60aed05.jpg",
+      "prevenda": true
+    },
+    {
+      "nome": "(ING) Coleção Treinador Avançado - Megaevolução 6 - Reinado Delta",
+      "edicao": "Reinado Delta",
+      "lingua": "us",
+      "preco": 429,
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/db906613-d7b1-47c3-ba27-518e533e3ae4.jpg",
+      "prevenda": true
+    },
+    {
       "ultimo": false,
       "novidade": false,
       "prevenda": false,
@@ -24,7 +47,7 @@
       "nome": "(ING) Coleção Treinador Avançado - Megaevolução 3 - Equilíbrio Perfeito",
       "edicao": "Equilíbrio Perfeito",
       "lingua": "us",
-      "preco": 349,
+      "preco": 350,
       "imagem": "imagens/1772196443_7754.jpg"
     },
     {
@@ -42,9 +65,9 @@
       "nome": "(PT-BR) Coleção Treinador Avançado - Megaevolução 2 - Fogo Fantasmagórico",
       "edicao": "Fogo Fantasmagórico",
       "lingua": "br",
-      "preco": 599,
+      "preco": 749,
       "imagem": "imagens/1760453056_2517.jpg",
-      "esgotado": true
+      "esgotado": false
     },
     {
       "nome": "(ING) Coleção Treinador Avançado - Megaevolução 2 - Fogo Fantasmagórico",

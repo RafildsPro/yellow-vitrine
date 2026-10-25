@@ -41,23 +41,23 @@
     {
       "nome": "(PT-BR) Box Coleção - Mega Charizard Y",
       "lingua": "br",
-      "preco": 129,
+      "preco": 170,
       "imagem": "imagens/1770642411_1649.jpg",
       "edicao": "Box",
-      "esgotado": true
+      "esgotado": false
     },
     {
       "nome": "(PT-BR) Box Coleção - Mega Charizard X",
       "lingua": "br",
-      "preco": 129,
+      "preco": 170,
       "imagem": "imagens/1770642425_1399.jpg",
       "edicao": "Box",
-      "esgotado": true
+      "esgotado": false
     },
     {
       "nome": " (PT-BR) Baralho Pré Construído - Baralho Batalha de Liga - Mewtwo ex da Equipe Rocket",
       "lingua": "br",
-      "preco": 89,
+      "preco": 80,
       "imagem": "imagens/1765374694_7373.jpg",
       "edicao": "Box",
       "ultimo": false,
@@ -69,7 +69,7 @@
       "preco": 129,
       "imagem": "imagens/1744899513_7567.jpg",
       "edicao": "Box",
-      "esgotado": true
+      "esgotado": false
     },
     {
       "nome": "(PT-BR) Box Coleção de Torneios Lílian",
@@ -78,7 +78,7 @@
       "imagem": "imagens/1745503208_6290.jpg",
       "edicao": "Box",
       "ultimo": false,
-      "esgotado": true
+      "esgotado": false
     },
     {
       "lingua": "us",
