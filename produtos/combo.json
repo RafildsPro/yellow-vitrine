@@ -71,7 +71,8 @@
       "edicao": "Evoluções Prismáticas",
       "lingua": "br",
       "preco": 399,
-      "imagem": "imagens/1730471009_853.jpg"
+      "imagem": "imagens/1730471009_853.jpg",
+      "ultimo": true
     }
   ]
 }

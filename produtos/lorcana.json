@@ -4,7 +4,8 @@
       "nome": "Deck Inicial - Fabled - Esmeralda e Rubi",
       "edicao": "Lorcana",
       "preco": 499,
-      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/427d40d0-866a-4e54-bf37-25925f877d50.jpg"
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/427d40d0-866a-4e54-bf37-25925f877d50.jpg",
+      "ultimo": true
     },
     {
       "nome": "Kit Inicial - Wilds Unknown 2-Player Starter Set",

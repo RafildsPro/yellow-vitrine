@@ -12,7 +12,8 @@
       "edicao": "Céus Em Evolução",
       "lingua": "us",
       "preco": 5999,
-      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/3c59c9c7-8389-49e9-a52b-f92eece9ffbc.jpg"
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/3c59c9c7-8389-49e9-a52b-f92eece9ffbc.jpg",
+      "ultimo": true
     },
     {
       "nome": "(PT-BR) Coleção Treinador Avançado - Megaevolução 6 - Reinado Delta",
@@ -31,7 +32,7 @@
       "prevenda": true
     },
     {
-      "ultimo": false,
+      "ultimo": true,
       "novidade": false,
       "prevenda": false,
       "nome": "(PT-BR) Coleção Treinador Avançado - Megaevolução 5 - Escuridão Absoluta",
@@ -55,7 +56,8 @@
       "edicao": "Equilíbrio Perfeito",
       "lingua": "us",
       "preco": 350,
-      "imagem": "imagens/1772196443_7754.jpg"
+      "imagem": "imagens/1772196443_7754.jpg",
+      "ultimo": true
     },
     {
       "lingua": "us",
@@ -82,7 +84,7 @@
       "lingua": "us",
       "preco": 1699,
       "imagem": "imagens/1760463089_3355.jpg",
-      "ultimo": true
+      "ultimo": false
     }
   ]
 }

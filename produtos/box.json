@@ -5,7 +5,8 @@
       "edicao": "Box",
       "lingua": "br",
       "preco": 250,
-      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/936d6512-858a-49c6-80f0-4acd4db3b59e.jpg"
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/936d6512-858a-49c6-80f0-4acd4db3b59e.jpg",
+      "ultimo": true
     },
     {
       "nome": "(PT-BR) Coleção Ilustração - Escarlate e Violeta 10.5 - Fogo Branco e Raio Preto - Victini",
@@ -90,7 +91,8 @@
       "preco": 129,
       "imagem": "imagens/1744899513_7567.jpg",
       "edicao": "Box",
-      "esgotado": false
+      "esgotado": false,
+      "ultimo": true
     },
     {
       "nome": "(PT-BR) Box Coleção de Torneios Lílian",
@@ -98,7 +100,7 @@
       "preco": 129,
       "imagem": "imagens/1745503208_6290.jpg",
       "edicao": "Box",
-      "ultimo": false,
+      "ultimo": true,
       "esgotado": false
     },
     {

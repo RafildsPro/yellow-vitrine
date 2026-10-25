@@ -5,7 +5,8 @@
       "edicao": "Amigos De Jornada",
       "lingua": "br",
       "preco": 649,
-      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/f8c661cc-d527-4f30-91dc-6110acbbe047.jpg"
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/f8c661cc-d527-4f30-91dc-6110acbbe047.jpg",
+      "ultimo": true
     },
     {
       "nome": "(PT-BR) Caixa de Booster - Megaevolução 6 - Reinado Delta",
@@ -24,7 +25,7 @@
       "prevenda": true
     },
     {
-      "ultimo": false,
+      "ultimo": true,
       "novidade": false,
       "prevenda": false,
       "nome": "(PT-BR) Caixa de Booster - Megaevolução 5 - Escuridão Absoluta",
@@ -47,7 +48,8 @@
       "lingua": "br",
       "preco": 360,
       "imagem": "imagens/1772645882_1793.jpg",
-      "prevenda": false
+      "prevenda": false,
+      "ultimo": true
     },
     {
       "nome": "(PT-BR) Caixa de Booster - Megaevolução 1 - Megaevolução",
@@ -63,7 +65,8 @@
       "lingua": "br",
       "preco": 499,
       "imagem": "imagens/1760453134_8343.jpg",
-      "prevenda": false
+      "prevenda": false,
+      "ultimo": true
     },
     {
       "lingua": "us",
@@ -79,7 +82,7 @@
     {
       "lingua": "br",
       "edicao": "Rivais Predestinados",
-      "ultimo": false,
+      "ultimo": true,
       "esgotado": false,
       "preco": 1190,
       "imagem": "imagens/1746651503_2905-2-.jpg",
@@ -130,7 +133,7 @@
     {
       "lingua": "br",
       "edicao": "Estrelas Radiantes",
-      "ultimo": false,
+      "ultimo": true,
       "esgotado": false,
       "preco": 1499,
       "imagem": "imagens/1653663186_3754.jpg",
