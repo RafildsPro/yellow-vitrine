@@ -943,6 +943,24 @@ nav a.active {
   gap: 12px;
 }
 
+/* Aviso de disponibilidade, logo abaixo dos filtros */
+.aviso-disponibilidade {
+  margin-top: 14px;
+  padding: 10px 16px;
+  background: #fff8d6;
+  border-left: 4px solid #ffcb05;
+  border-radius: 10px;
+  color: #5c4a00;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+body.dark .aviso-disponibilidade {
+  background: #2a2711;
+  color: #f3e7a3;
+}
+
 #filtro-busca, #busca-cartas {
   appearance: none;
   background: #ffcb05;
