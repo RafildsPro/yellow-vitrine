@@ -16,6 +16,7 @@ const COR_TIPO = {
   'Single':                    '#457b9d',
   'Combo de Pacotes':          '#e76f51',
   'Mini Tin':                  '#606c38',
+  'Lorcana':                   '#d6336c',
   'Outros':                    '#888',
 };
 
@@ -28,6 +29,7 @@ const CATEGORIAS = [
   { arquivo: 'produtos/single.json',           tipo: 'Single' },
   { arquivo: 'produtos/combo.json',            tipo: 'Combo de Pacotes' },
   { arquivo: 'produtos/mini-tin.json',          tipo: 'Mini Tin' },
+  { arquivo: 'produtos/lorcana.json',           tipo: 'Lorcana' },
   { arquivo: 'produtos/outros.json',            tipo: 'Outros' },
 ];
 
