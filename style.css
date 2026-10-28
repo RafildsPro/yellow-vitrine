@@ -92,29 +92,38 @@ body.dark #aviso-pausa .pausa-msg { color: #ccc; }
 
 /* ── TICKER PRÉ-VENDA ── */
 #ticker-live {
-  background: #0d1f3c;
-  border-bottom: 3px solid #ffcb05;
+  background: linear-gradient(90deg, #050f1c 0%, #0b1e38 50%, #091628 100%);
+  border-bottom: 1px solid rgba(255,203,5,0.25);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.35);
   display: none;
   align-items: center;
   overflow: hidden;
-  height: 38px;
+  height: 44px;
   position: sticky;
   top: 84px;
   z-index: 99;
+  padding: 0 16px;
+  gap: 14px;
 }
 .ticker-badge {
   background: #ffcb05;
   color: #0d1f3c;
-  font-size: 0.7rem;
+  font-size: 0.67rem;
   font-weight: 900;
-  padding: 0 16px;
-  letter-spacing: 1px;
+  padding: 5px 14px;
+  letter-spacing: 1.2px;
   white-space: nowrap;
   flex-shrink: 0;
-  height: 100%;
+  border-radius: 30px;
   display: flex;
   align-items: center;
-  gap: 4px;
+  box-shadow: 0 0 14px rgba(255,203,5,0.4), 0 2px 6px rgba(0,0,0,0.3);
+}
+.ticker-divider {
+  width: 1px;
+  height: 20px;
+  background: rgba(255,203,5,0.2);
+  flex-shrink: 0;
 }
 .ticker-wrap {
   overflow: hidden;
@@ -122,6 +131,8 @@ body.dark #aviso-pausa .pausa-msg { color: #ccc; }
   height: 100%;
   display: flex;
   align-items: center;
+  mask-image: linear-gradient(90deg, transparent 0%, black 4%, black 96%, transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 4%, black 96%, transparent 100%);
 }
 .ticker-items {
   display: flex;
@@ -130,16 +141,15 @@ body.dark #aviso-pausa .pausa-msg { color: #ccc; }
   animation: ticker-scroll 40s linear infinite;
 }
 .ticker-item {
-  color: rgba(255,255,255,0.9);
-  font-size: 0.82rem;
-  font-weight: 700;
-  padding: 0 22px;
-  letter-spacing: 0.2px;
+  color: rgba(255,255,255,0.88);
+  font-size: 0.83rem;
+  font-weight: 600;
+  padding: 0 24px;
+  letter-spacing: 0.15px;
 }
 .ticker-sep {
-  color: rgba(255,203,5,0.4);
-  padding: 0 2px;
-  font-size: 0.55rem;
+  color: rgba(255,203,5,0.35);
+  font-size: 0.5rem;
 }
 @keyframes ticker-scroll {
   0%   { transform: translateX(0); }
