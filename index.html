@@ -61,9 +61,9 @@
     </div>
   </header>
 
-  <!-- Ticker AO VIVO -->
+  <!-- Ticker Pré-Venda -->
   <div id="ticker-live">
-    <span class="ticker-badge">AO VIVO</span>
+    <span class="ticker-badge">⏳ PRÉ-VENDA</span>
     <div class="ticker-wrap">
       <div class="ticker-items" id="ticker-items"></div>
     </div>
@@ -71,25 +71,20 @@
   <script>
     (async () => {
       const cats = ['caixa-booster','blister-triplo','blister-quadruplo','colecao-treinador','box','single','combo','mini-tin','outros'];
-      const itens = [];
+      const nomes = [];
       await Promise.all(cats.map(async c => {
         try {
           const d = await fetch(`produtos/${c}.json`).then(r => r.json());
-          (d.items || []).forEach(p => {
-            if (p.esgotado) return;
-            if (p.prevenda) itens.push({ label: '⏳ Pré-venda', nome: p.nome });
-            else if (p.novidade) itens.push({ label: '✨ Novidade', nome: p.nome });
-            else if (p.ultimo) itens.push({ label: '🔥 Último', nome: p.nome });
-          });
+          (d.items || []).forEach(p => { if (p.prevenda && !p.esgotado) nomes.push(p.nome); });
         } catch {}
       }));
-      if (itens.length === 0) return;
+      if (nomes.length === 0) return;
       const track = document.getElementById('ticker-items');
-      const rep = [...itens, ...itens, ...itens];
-      track.innerHTML = rep.map(i =>
-        `<span class="ticker-item"><em class="ticker-label">${i.label}</em>${i.nome}</span>`
-      ).join('<span class="ticker-sep">◆</span>');
-      track.style.animationDuration = `${Math.max(24, itens.length * 7)}s`;
+      const rep = [...nomes, ...nomes, ...nomes];
+      track.innerHTML = rep.map(n =>
+        `<span class="ticker-item">${n}</span>`
+      ).join('<span class="ticker-sep">·</span>');
+      track.style.animationDuration = `${Math.max(20, nomes.length * 6)}s`;
       document.getElementById('ticker-live').style.display = 'flex';
     })();
     fetch('/api/visitas').then(r => r.json()).then(d => {

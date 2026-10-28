@@ -90,30 +90,31 @@ body.dark #aviso-pausa .pausa-msg { color: #ccc; }
 }
 #aviso-pausa .pausa-wpp:hover { opacity: 0.85; }
 
-/* ── TICKER AO VIVO ── */
+/* ── TICKER PRÉ-VENDA ── */
 #ticker-live {
-  background: #0a0a0a;
-  border-bottom: 2px solid #e63946;
+  background: #0d1f3c;
+  border-bottom: 3px solid #ffcb05;
   display: none;
   align-items: center;
   overflow: hidden;
-  height: 36px;
+  height: 38px;
   position: sticky;
   top: 84px;
   z-index: 99;
 }
 .ticker-badge {
-  background: #e63946;
-  color: #fff;
-  font-size: 0.68rem;
+  background: #ffcb05;
+  color: #0d1f3c;
+  font-size: 0.7rem;
   font-weight: 900;
-  padding: 0 12px;
-  letter-spacing: 1.5px;
+  padding: 0 16px;
+  letter-spacing: 1px;
   white-space: nowrap;
   flex-shrink: 0;
   height: 100%;
   display: flex;
   align-items: center;
+  gap: 4px;
 }
 .ticker-wrap {
   overflow: hidden;
@@ -129,20 +130,16 @@ body.dark #aviso-pausa .pausa-msg { color: #ccc; }
   animation: ticker-scroll 40s linear infinite;
 }
 .ticker-item {
-  color: #d4d4d4;
-  font-size: 0.8rem;
+  color: rgba(255,255,255,0.9);
+  font-size: 0.82rem;
   font-weight: 700;
-  padding: 0 20px;
-}
-.ticker-label {
-  font-style: normal;
-  color: #ffcb05;
-  margin-right: 4px;
+  padding: 0 22px;
+  letter-spacing: 0.2px;
 }
 .ticker-sep {
-  color: #444;
-  padding: 0 4px;
-  font-size: 0.6rem;
+  color: rgba(255,203,5,0.4);
+  padding: 0 2px;
+  font-size: 0.55rem;
 }
 @keyframes ticker-scroll {
   0%   { transform: translateX(0); }
