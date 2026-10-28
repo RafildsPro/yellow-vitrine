@@ -90,6 +90,84 @@ body.dark #aviso-pausa .pausa-msg { color: #ccc; }
 }
 #aviso-pausa .pausa-wpp:hover { opacity: 0.85; }
 
+/* ── TICKER AO VIVO ── */
+#ticker-live {
+  background: #0a0a0a;
+  border-bottom: 2px solid #e63946;
+  display: none;
+  align-items: center;
+  overflow: hidden;
+  height: 36px;
+  position: sticky;
+  top: 84px;
+  z-index: 99;
+}
+.ticker-badge {
+  background: #e63946;
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 900;
+  padding: 0 12px;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.ticker-wrap {
+  overflow: hidden;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.ticker-items {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: ticker-scroll 40s linear infinite;
+}
+.ticker-item {
+  color: #d4d4d4;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0 20px;
+}
+.ticker-label {
+  font-style: normal;
+  color: #ffcb05;
+  margin-right: 4px;
+}
+.ticker-sep {
+  color: #444;
+  padding: 0 4px;
+  font-size: 0.6rem;
+}
+@keyframes ticker-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
+}
+
+/* ── CONTADOR DE VISITAS NO NAV ── */
+.nav-visitas {
+  font-size: 0.76rem;
+  font-weight: 800;
+  color: #0d1f3c;
+  background: rgba(13,31,60,0.1);
+  border: 1.5px solid rgba(13,31,60,0.22);
+  padding: 4px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+  cursor: default;
+  flex-shrink: 0;
+}
+body.dark .nav-visitas {
+  color: #ffcb05;
+  background: rgba(255,203,5,0.1);
+  border-color: rgba(255,203,5,0.35);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -386,9 +464,9 @@ nav a.active {
 
 /* ── HERO ── */
 .hero {
-  background: linear-gradient(135deg, #0a1628 0%, #0d1f3c 30%, #1a3a6e 60%, #c9a200 100%);
+  background: linear-gradient(160deg, #020609 0%, #04090f 25%, #07101e 55%, #0b152a 80%, #0a1220 100%);
   text-align: center;
-  padding: 56px 24px 52px;
+  padding: 76px 24px 72px;
   position: relative;
   overflow: hidden;
 }
@@ -407,16 +485,16 @@ nav a.active {
   top: -30%;
   left: 50%;
   transform: translateX(-50%);
-  width: 720px;
-  height: 420px;
-  background: radial-gradient(ellipse at center, rgba(255,203,5,0.22) 0%, rgba(255,203,5,0.06) 45%, transparent 70%);
+  width: 860px;
+  height: 500px;
+  background: radial-gradient(ellipse at center, rgba(255,203,5,0.38) 0%, rgba(255,203,5,0.14) 38%, rgba(8,20,45,0.25) 62%, transparent 78%);
   pointer-events: none;
 }
 
 /* Ícones SVG de tipo */
 .hero-icon {
   position: absolute;
-  opacity: 0.09;
+  opacity: 0.13;
 }
 
 /* Distribuição e tamanho dos ícones */
