@@ -14,7 +14,7 @@
       "lingua": "us",
       "preco": 190,
       "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/d02dead2-f8f2-43dd-83f3-db28528cd800.jpg",
-      "prevenda": true
+      "prevenda": false
     },
     {
       "ultimo": false,
