@@ -156,6 +156,29 @@ body.dark #aviso-pausa .pausa-msg { color: #ccc; }
   100% { transform: translateX(-33.333%); }
 }
 
+/* Ticker Raridade — mesmo layout, badge diferente */
+#ticker-raridade {
+  background: linear-gradient(90deg, #0d0520 0%, #1a0a35 50%, #100318 100%);
+  border-bottom: 1px solid rgba(167,105,255,0.25);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.35);
+  display: none;
+  align-items: center;
+  overflow: hidden;
+  height: 44px;
+  position: sticky;
+  top: 84px;
+  z-index: 99;
+  padding: 0 16px;
+  gap: 14px;
+}
+.ticker-badge-raridade {
+  background: #a769ff;
+  color: #fff;
+  box-shadow: 0 0 14px rgba(167,105,255,0.5), 0 2px 6px rgba(0,0,0,0.3);
+}
+#ticker-raridade .ticker-item { color: rgba(255,255,255,0.88); }
+#ticker-raridade .ticker-sep  { color: rgba(167,105,255,0.4); }
+
 /* ── CONTADOR DE VISITAS NO NAV ── */
 .nav-visitas {
   font-size: 0.76rem;
@@ -247,7 +270,7 @@ body.dark .filtros-inner {
 }
 
 /* ── BADGES ── */
-.badge-ultimo, .badge-novidade, .badge-prevenda {
+.badge-ultimo, .badge-novidade, .badge-prevenda, .badge-raridade {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -279,6 +302,13 @@ body.dark .filtros-inner {
   top: 10px;
   right: 10px;
   left: auto;
+}
+
+.badge-raridade {
+  background: #a769ff;
+  box-shadow: 0 2px 8px rgba(167,105,255,0.5);
+  top: 10px;
+  left: 10px;
 }
 
 .badge-esgotado {

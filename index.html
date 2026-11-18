@@ -69,24 +69,45 @@
       <div class="ticker-items" id="ticker-items"></div>
     </div>
   </div>
+  <!-- Ticker Raridade (aparece só quando não há pré-venda) -->
+  <div id="ticker-raridade">
+    <span class="ticker-badge ticker-badge-raridade">💎 RARIDADE</span>
+    <div class="ticker-divider"></div>
+    <div class="ticker-wrap">
+      <div class="ticker-items" id="ticker-raridade-items"></div>
+    </div>
+  </div>
   <script>
     (async () => {
-      const cats = ['caixa-booster','blister-triplo','blister-quadruplo','colecao-treinador','box','single','combo','mini-tin','outros'];
-      const nomes = [];
+      const cats = ['caixa-booster','blister-triplo','blister-quadruplo','colecao-treinador','box','single','combo','mini-tin','lorcana','outros'];
+
+      const [nomesPreVenda, nomesRaridade] = [[], []];
       await Promise.all(cats.map(async c => {
         try {
           const d = await fetch(`produtos/${c}.json`).then(r => r.json());
-          (d.items || []).forEach(p => { if (p.prevenda && !p.esgotado) nomes.push(p.nome); });
+          (d.items || []).forEach(p => {
+            if (p.prevenda && !p.esgotado) nomesPreVenda.push(p.nome);
+            if (p.raridade && !p.esgotado) nomesRaridade.push(p.nome);
+          });
         } catch {}
       }));
-      if (nomes.length === 0) return;
-      const track = document.getElementById('ticker-items');
-      const rep = [...nomes, ...nomes, ...nomes];
-      track.innerHTML = rep.map(n =>
-        `<span class="ticker-item">${n}</span>`
-      ).join('<span class="ticker-sep">·</span>');
-      track.style.animationDuration = `${Math.max(20, nomes.length * 6)}s`;
-      document.getElementById('ticker-live').style.display = 'flex';
+
+      function montarTicker(elId, nomes) {
+        const track = document.getElementById(elId);
+        const rep = [...nomes, ...nomes, ...nomes];
+        track.innerHTML = rep.map(n =>
+          `<span class="ticker-item">${n}</span>`
+        ).join('<span class="ticker-sep">·</span>');
+        track.style.animationDuration = `${Math.max(20, nomes.length * 6)}s`;
+      }
+
+      if (nomesPreVenda.length > 0) {
+        montarTicker('ticker-items', nomesPreVenda);
+        document.getElementById('ticker-live').style.display = 'flex';
+      } else if (nomesRaridade.length > 0) {
+        montarTicker('ticker-raridade-items', nomesRaridade);
+        document.getElementById('ticker-raridade').style.display = 'flex';
+      }
     })();
     fetch('/api/visitas').then(r => r.json()).then(d => {
       const el = document.getElementById('nav-visitas');

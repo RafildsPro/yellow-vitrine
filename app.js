@@ -126,6 +126,7 @@ function criarCard(p) {
     ${p.ultimo && !p.esgotado ? `<div class="badge-ultimo">🔥 Último!</div>` : ''}
     ${p.novidade && !p.esgotado ? `<div class="badge-novidade">✨ Novidade!</div>` : ''}
     ${p.prevenda && !p.esgotado ? `<div class="badge-prevenda">⏳ Pré Venda</div>` : ''}
+    ${p.raridade && !p.esgotado ? `<div class="badge-raridade">💎 Raridade</div>` : ''}
     ${imgHtml}
     ${p.esgotado ? `<div class="badge-esgotado">⛔ Esgotado</div>` : ''}
     <div class="card-body">
