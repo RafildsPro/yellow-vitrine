@@ -10,6 +10,17 @@
       "novidade": true
     },
     {
+      "lingua": "us",
+      "edicao": "151",
+      "ultimo": false,
+      "esgotado": false,
+      "preco": 5999,
+      "imagem": "imagens/1696267228_8291-1-.jpg",
+      "novidade": false,
+      "nome": "(ING) Coleção Treinador Avançado - Escarlate e Violeta - 151",
+      "prevenda": false
+    },
+    {
       "nome": "(PT-BR) Coleção Treinador Avançado - Megaevolução 6 - Reinado Delta",
       "edicao": "Reinado Delta",
       "lingua": "br",
@@ -23,7 +34,8 @@
       "lingua": "us",
       "preco": 429,
       "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/db906613-d7b1-47c3-ba27-518e533e3ae4.jpg",
-      "prevenda": false
+      "prevenda": false,
+      "esgotado": true
     },
     {
       "ultimo": true,
@@ -86,17 +98,6 @@
       "preco": 1699,
       "imagem": "imagens/1760463089_3355.jpg",
       "ultimo": false
-    },
-    {
-      "lingua": "us",
-      "edicao": "151",
-      "ultimo": false,
-      "esgotado": false,
-      "preco": 5999,
-      "imagem": "imagens/1696267228_8291-1-.jpg",
-      "novidade": false,
-      "nome": "(ING) Coleção Treinador Avançado - Escarlate e Violeta - 151",
-      "prevenda": false
     }
   ]
 }
