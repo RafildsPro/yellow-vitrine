@@ -86,6 +86,17 @@
       "preco": 1699,
       "imagem": "imagens/1760463089_3355.jpg",
       "ultimo": false
+    },
+    {
+      "lingua": "us",
+      "edicao": "151",
+      "ultimo": false,
+      "esgotado": false,
+      "preco": 5999,
+      "imagem": "imagens/1696267228_8291-1-.jpg",
+      "novidade": false,
+      "nome": "(ING) Coleção Treinador Avançado - Escarlate e Violeta - 151",
+      "prevenda": false
     }
   ]
 }
