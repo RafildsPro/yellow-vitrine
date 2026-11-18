@@ -1,19 +1,12 @@
 {
   "items": [
     {
-      "nome": "(PT-BR) Blister Triplo Escarlate e Violeta 7 - Coroa Estelar ",
-      "edicao": "Coroa Estelar",
-      "lingua": "br",
-      "preco": 89,
-      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/3c576b7a-cb02-46ee-a376-9c3358395443.jpg"
-    },
-    {
       "nome": "(PT-BR) Blister Triplo Megaevolução 6 - Reinado Delta - Spritzee",
       "edicao": "Reinado Delta",
       "lingua": "br",
       "preco": 36,
       "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/a5a13c5a-6848-456e-8c44-394606d9cd65.jpg",
-      "prevenda": true
+      "prevenda": false
     },
     {
       "ultimo": false,
@@ -87,18 +80,26 @@
       "lingua": "br",
       "preco": 59,
       "imagem": "imagens/1738164597_5550.jpg",
-      "prevenda": false
+      "prevenda": false,
+      "ultimo": false
     },
     {
-      "ultimo": false,
-      "novidade": true,
-      "prevenda": false,
-      "nome": "(PT-BR) Blister Triplo Espada e Escudo 13 - Realeza Absoluta",
-      "edicao": "Realeza Absoluta",
+      "nome": "(PT-BR) Blister Triplo Escarlate e Violeta 7 - Coroa Estelar ",
+      "edicao": "Coroa Estelar",
       "lingua": "br",
+      "preco": 89,
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/3c576b7a-cb02-46ee-a376-9c3358395443.jpg"
+    },
+    {
+      "lingua": "br",
+      "edicao": "Realeza Absoluta",
+      "ultimo": false,
+      "esgotado": true,
       "preco": 199,
       "imagem": "imagens/1672258063_4667.jpg",
-      "esgotado": true
+      "novidade": true,
+      "nome": "(PT-BR) Blister Triplo Espada e Escudo 13 - Realeza Absoluta",
+      "prevenda": false
     }
   ]
 }
