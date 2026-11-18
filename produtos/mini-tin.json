@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "lingua": "br",
+      "edicao": "30 Anos",
+      "ultimo": false,
+      "esgotado": false,
+      "preco": 89,
+      "imagem": "imagens/01.png",
+      "novidade": false,
+      "nome": "(PT) Mini Lata - Celebração de 30 Anos - UNIDADE",
+      "prevenda": false
+    },
+    {
       "nome": "(ING) Mini Lata - 151 - UNIDADE",
       "edicao": "151",
       "lingua": "us",
