@@ -7,10 +7,12 @@
       "preco": 5999,
       "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/3c59c9c7-8389-49e9-a52b-f92eece9ffbc.jpg",
       "ultimo": false,
-      "novidade": true
+      "novidade": false,
+      "raridade": true
     },
     {
       "lingua": "us",
+      "raridade": true,
       "edicao": "Evoluções em Paldea",
       "ultimo": false,
       "esgotado": false,
@@ -22,6 +24,7 @@
     },
     {
       "lingua": "us",
+      "raridade": true,
       "edicao": "151",
       "ultimo": false,
       "esgotado": false,
