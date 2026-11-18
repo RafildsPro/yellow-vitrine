@@ -1,19 +1,13 @@
 {
   "items": [
     {
-      "nome": "(ING) Coleção Treinador Avançado - Megaevolução 4 - Caos Ascendente",
-      "edicao": "Caos Ascendente",
-      "lingua": "us",
-      "preco": 399,
-      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/763bedbc-a2a3-40e4-aac8-6228f9aa4b9f.jpg"
-    },
-    {
       "nome": "(ING) Coleção Treinador Avançado - Céus em Evolução 02",
       "edicao": "Céus Em Evolução",
       "lingua": "us",
       "preco": 5999,
       "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/3c59c9c7-8389-49e9-a52b-f92eece9ffbc.jpg",
-      "ultimo": true
+      "ultimo": false,
+      "novidade": true
     },
     {
       "nome": "(PT-BR) Coleção Treinador Avançado - Megaevolução 6 - Reinado Delta",
@@ -21,7 +15,7 @@
       "lingua": "br",
       "preco": 399,
       "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/a0a5f31a-e619-4a5c-b26d-900da60aed05.jpg",
-      "prevenda": true
+      "prevenda": false
     },
     {
       "nome": "(ING) Coleção Treinador Avançado - Megaevolução 6 - Reinado Delta",
@@ -29,7 +23,7 @@
       "lingua": "us",
       "preco": 429,
       "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/db906613-d7b1-47c3-ba27-518e533e3ae4.jpg",
-      "prevenda": true
+      "prevenda": false
     },
     {
       "ultimo": true,
@@ -50,6 +44,13 @@
       "lingua": "us",
       "preco": 380,
       "imagem": "imagens/1781783942_5726.jpg"
+    },
+    {
+      "nome": "(ING) Coleção Treinador Avançado - Megaevolução 4 - Caos Ascendente",
+      "edicao": "Caos Ascendente",
+      "lingua": "us",
+      "preco": 399,
+      "imagem": "https://zltyrbwgyohgrbxmearz.supabase.co/storage/v1/object/public/product-photos/763bedbc-a2a3-40e4-aac8-6228f9aa4b9f.jpg"
     },
     {
       "nome": "(ING) Coleção Treinador Avançado - Megaevolução 3 - Equilíbrio Perfeito",
